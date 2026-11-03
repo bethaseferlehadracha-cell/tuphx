@@ -603,6 +603,80 @@ h1 em{font-style:normal;background:linear-gradient(90deg,var(--a),var(--a2));-we
   .okbar{flex-wrap:wrap}
 }
 
+/* ===================== v3 additions ===================== */
+.wtoast{top:auto!important;bottom:14px;pointer-events:none}
+.navr{display:flex;align-items:center;gap:12px}
+.ost{display:flex;background:rgba(0,0,0,.05);border-radius:999px;padding:3px;gap:2px}
+.ost button{font-family:var(--head);font-weight:500;font-size:12px;padding:5px 11px;border-radius:999px;color:var(--muted)}
+.ost button.on{background:#fff;color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+/* chooser */
+.osc{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px 0;animation:rise .5s cubic-bezier(.3,.7,.2,1)}
+.osc-emb{width:96px;height:96px;margin-bottom:14px;filter:drop-shadow(0 14px 22px rgba(0,0,0,.2))}
+.osc h2{font-family:var(--head);font-weight:800;font-size:clamp(40px,5vw,72px);line-height:1;letter-spacing:-1.5px;margin:10px 0 14px}
+.osc h2 em{font-style:normal;background:linear-gradient(90deg,#4A8BE0,#9A7BE0 50%,#EE7A4E);-webkit-background-clip:text;background-clip:text;color:transparent}
+.osc>p{font-size:17px;color:#3a4741;max-width:560px;line-height:1.6}
+.osg{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px;width:min(680px,100%)}
+.osb{position:relative;background:#fff;border-radius:26px;padding:26px 20px 22px;display:flex;flex-direction:column;align-items:center;gap:6px;border:2px solid rgba(255,255,255,.95);box-shadow:0 18px 40px -26px rgba(0,0,0,.45);transition:transform .25s cubic-bezier(.3,.7,.2,1),border-color .2s,box-shadow .25s;color:var(--ink)}
+.osb:hover{transform:translateY(-6px);border-color:var(--ink);box-shadow:0 26px 50px -26px rgba(0,0,0,.5)}
+.osb .lap{width:130px;height:92px;color:#2B3A33;margin-bottom:6px;transition:transform .3s}
+.osb:hover .lap{transform:scale(1.06) rotate(-2deg)}
+.osb b{font-family:var(--head);font-weight:800;font-size:26px}
+.osb span{font-size:13.5px;color:var(--muted);direction:ltr}
+.osb em{position:absolute;top:14px;right:14px;font-style:normal;font-size:11.5px;font-weight:700;background:#E3F5EA;color:#1D7A45;border-radius:999px;padding:3px 10px}
+.osb.sug{border-color:#9ED9B5}
+/* mac window */
+.win.mac .dots i:nth-child(1){background:#FF5F57}.win.mac .dots i:nth-child(2){background:#FEBC2E}.win.mac .dots i:nth-child(3){background:#28C840}
+.macbar{display:flex;gap:2px;padding:3px 10px;background:#ECECEC;border-bottom:1px solid #D9D9D9;font-size:12.5px;flex:none}
+.macbar:empty{display:none}
+.macbar span{padding:2px 10px;border-radius:5px;cursor:pointer;color:#222}
+.macbar span:hover{background:rgba(0,0,0,.08)}
+.macbar span.mapp{font-weight:700}
+.vk.mac .vkey{background:#3d4240;font-size:calc(var(--u)*.26)}
+/* keys lesson */
+.learn.compact .hero{margin:12px 0 12px}
+.learn.compact h1{font-size:clamp(28px,2.6vw,40px)}
+.learn.compact h1 br{display:none}
+.learn.compact .lead{font-size:15.5px;margin-top:6px}
+.learn.compact .cta{margin-top:12px;padding:10px 12px 10px 20px}
+.kstage{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:14px;align-items:stretch}
+.kbx{background:rgba(255,255,255,.6);border-radius:22px;padding:12px;border:1px solid rgba(255,255,255,.95);display:flex;align-items:center;justify-content:center;min-width:0}
+.kbx .vkbox{width:100%;display:flex;justify-content:center}
+.kspot{background:#fff;border-radius:22px;padding:18px 20px;box-shadow:0 14px 34px -24px rgba(0,40,25,.45);border:1px solid rgba(255,255,255,.95);display:flex;perspective:900px;min-height:180px}
+.ks-empty,.ks-card{display:flex;flex-direction:column;gap:8px;justify-content:center;width:100%}
+.ks-empty{align-items:center;text-align:center;color:var(--muted)}
+.ks-empty .ks-i{font-size:34px}
+.ks-empty b{font-family:var(--head);font-size:18px;color:var(--ink)}
+.ks-empty p{font-size:13.5px;line-height:1.5}
+.ks-pull{margin-top:6px;background:var(--soft);color:var(--ink);border-radius:12px;padding:8px 10px;font-weight:500}
+.ks-card{align-items:flex-start}
+.ks-card .ks-n{font-family:var(--head);font-weight:700;font-size:12px;color:var(--a)}
+.ks-card p{font-size:15px;line-height:1.6;color:#2f3c35}
+.ks-card p b{color:var(--ink)}
+@keyframes flipin{from{transform:rotateY(-90deg);opacity:0}to{transform:none;opacity:1}}
+.kgrid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:10px;margin-top:12px;position:relative;min-height:60px}
+.kt2{height:62px;perspective:600px;transition:opacity .35s,transform .35s}
+.kt2 .kin{display:flex;align-items:center;justify-content:center;gap:6px;height:100%;background:#fff;border-radius:16px;box-shadow:0 10px 24px -18px rgba(0,40,25,.5);border:1px solid rgba(255,255,255,.95);transition:transform .6s cubic-bezier(.3,.7,.2,1),background .3s;position:relative}
+.kt2 .kin em{position:absolute;top:5px;left:8px;font-style:normal;font-size:11px;font-weight:700;color:#a8b5ae}
+.kt2:hover .kin{transform:translateY(-3px);box-shadow:0 14px 26px -16px rgba(0,40,25,.55)}
+.kt2.flip .kin{transform:rotateY(180deg);background:var(--soft)}
+.kt2.gone{opacity:0;transform:translateY(40px) scale(.6)}
+.kg-done{display:none;grid-column:1/-1;text-align:center;font-family:var(--head);font-weight:700;padding:18px;background:rgba(255,255,255,.7);border-radius:16px}
+.kgrid.all .kg-done{display:block;animation:pop .4s}
+.ktray{display:flex;align-items:center;gap:12px;margin-top:12px;background:rgba(255,255,255,.65);border:1px dashed rgba(0,0,0,.15);border-radius:16px;padding:8px 12px;min-height:50px}
+.kt-l{font-family:var(--head);font-weight:500;font-size:13px;color:var(--muted);white-space:nowrap}
+.kt-l b{color:var(--a)}
+.kt-chips{display:flex;gap:6px;flex-wrap:wrap}
+.kchip{border-radius:10px;padding:2px;animation:drop .45s cubic-bezier(.3,.7,.2,1)}
+.kchip .kc i{font-size:11.5px;padding:2px 7px 3px;min-width:22px}
+.kchip.on{background:var(--tab)}
+@keyframes drop{from{transform:translateY(-30px);opacity:0}to{transform:none;opacity:1}}
+@media (max-width:1150px){.kstage{grid-template-columns:1fr}.kgrid{grid-template-columns:repeat(4,minmax(0,1fr))}.osg{grid-template-columns:1fr}}
+
+.vk .vkey.lit,.vk.mac .vkey.lit{background:var(--a2);color:#fff;box-shadow:0 0 0 2px #fff,0 0 22px var(--a2)}
+.vk .vkey.bad,.vk.mac .vkey.bad{background:#C9472F}
+.vk .vkey.ok,.vk.mac .vkey.ok{background:#2E9D5B}
+@media (max-height:820px) and (min-width:1151px){.learn.compact .lead{display:none}.learn.compact .hero{margin:8px 0}}
+
 </style>
 </head>
 <body>
@@ -612,6 +686,7 @@ h1 em{font-style:normal;background:linear-gradient(90deg,var(--a),var(--a2));-we
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const KEY='lomdat-office-v1';
 let P={done:{},pos:null,qz:{}};
+let OS='win';
 function load(){try{const v=localStorage.getItem(KEY);if(v)P=Object.assign(P,JSON.parse(v))}catch(e){}P.done=P.done||{};P.qz=P.qz||{}}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(P))}catch(e){}}
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
@@ -650,8 +725,9 @@ const CURSOR='<svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 2l14 1
 
 /* ---------- keycaps ---------- */
 const KLBL={Win:'⊞ Win',Ctrl:'Ctrl',Shift:'Shift',Alt:'Alt',Enter:'Enter',Space:'Space'};
-function kc(s,big){const parts=s==='+'?['+']:s.split(/\+(?!$)/);return `<span class="kc${big?' big':''}">${parts.map(p=>`<i>${KLBL[p]||p}</i>`).join('<s>+</s>')}</span>`}
-const isCombo=s=>/^(Ctrl|Shift|Alt|Win|F\d+|Esc|Tab|Home|End|Delete|Backspace|Page|PrtSc|Enter)/.test(s);
+const KLBL1={'⌘':'⌘ command','⌥':'⌥ option','⌃':'⌃ control'};
+function kc(s,big){const parts=s==='+'?['+']:s.split(/\+(?!$)/);const one=parts.length==1;return `<span class="kc${big?' big':''}">${parts.map(p=>`<i>${(one&&KLBL1[p])||KLBL[p]||p}</i>`).join('<s>+</s>')}</span>`}
+const isCombo=s=>/^(Ctrl|Shift|Alt|Win|F\d+|Esc|Tab|Home|End|Delete|Backspace|Page|PrtSc|Enter|⌘|⌥|⌃|fn|Option|delete|esc|Return)/.test(s);
 
 /* ---------- data helpers (bodies) ---------- */
 const NAMES=['ישראל כהן','נועה לוי','איתי מזרחי','שירה אברהם','עומר פרץ','מאיה ביטון','יואב שלום','תמר רוזן','אלון דהן','רוני גבאי','ליה אוחיון','דניאל חדד','עדי פרידמן','אורי אזולאי','הילה שפירא','נדב קליין','יעל ברק','גיא סויסה','רותם גולן','עידו נחום'];
@@ -748,11 +824,11 @@ Object.values(APPS).forEach(a=>{a.menus=Object.assign({},COMMON_MENUS,a.menus);a
 /* ===================== simulation ===================== */
 function simEx(host,foot,ex,done,mode){
   const A=APPS[ex.app];
-  const tabs=ex.tabs||A.tabs, ribbon=Object.assign({},A.ribbon,ex.ribbon||{}), menus=Object.assign({},A.menus,ex.menus||{}), dlgs=Object.assign({},A.dlgs,ex.dlgs||{}), ctx=ex.ctx||{};
+  const tabs=(ex.tabs||A.tabs).filter(t=>OS!=='mac'||ex.tabs||(t.id!=='file'&&t.id!=='olfile')), ribbon=Object.assign({},A.ribbon,ex.ribbon||{}), menus=Object.assign({},A.menus,ex.menus||{}), dlgs=Object.assign({},A.dlgs,ex.dlgs||{}), ctx=ex.ctx||{};
   const st={tab:ex.tab||A.tab,step:0,err:0,checks:{},radio:{},filled:{},side:{},dlg:null,menus:[],fin:false,alive:true};
-  host.innerHTML=`<div class="win" style="--wa:${A.c}"><div class="titlebar"><span class="tb-app">${A.n}</span><span class="tb-file">${(f=>/\.\w{3,4}$/.test(f)?`<bdi dir="ltr">${f}</bdi>`:f)(ex.file||A.file)}</span><span class="tb-lock">🔒 מוגן בסיסמה</span><div class="dots"><i></i><i></i><i></i></div></div>
-   ${ex.noRibbon?'':'<div class="ribtabs"></div><div class="ribbon"></div>'}<div class="wbody">${typeof ex.body=='function'?ex.body():ex.body}</div><div class="layer"></div><div class="fcur">${CURSOR}</div></div>`;
-  const win=$('.win',host),tabsEl=$('.ribtabs',win),ribEl=$('.ribbon',win),body=$('.wbody',win),layer=$('.layer',win),cur=$('.fcur',win);
+  host.innerHTML=`<div class="win${OS=='mac'?' mac':''}" style="--wa:${A.c}"><div class="titlebar"><span class="tb-app">${A.n}</span><span class="tb-file">${(f=>/\.\w{3,4}$/.test(f)?`<bdi dir="ltr">${f}</bdi>`:f)(ex.file||A.file)}</span><span class="tb-lock">🔒 מוגן בסיסמה</span><div class="dots"><i></i><i></i><i></i></div></div>
+   ${ex.noRibbon?'':'<div class="macbar"></div><div class="ribtabs"></div><div class="ribbon"></div>'}<div class="wbody">${typeof ex.body=='function'?ex.body():ex.body}</div><div class="layer"></div><div class="fcur">${CURSOR}</div></div>`;
+  const win=$('.win',host),mbEl=$('.macbar',win),tabsEl=$('.ribtabs',win),ribEl=$('.ribbon',win),body=$('.wbody',win),layer=$('.layer',win),cur=$('.fcur',win);
   // definitions index
   const defs={};
   Object.values(ribbon).forEach(gs=>gs.forEach(g=>g.b.forEach(b=>defs[b.id]=b)));
@@ -763,7 +839,7 @@ function simEx(host,foot,ex,done,mode){
   const tabOf=id=>{for(const t in ribbon)for(const g of ribbon[t])if(g.b.some(b=>b.id===id))return t;return null};
   const api={body,win,q:s=>$$(s,body),toast:m=>{const t=document.createElement('div');t.className='wtoast';t.textContent=m;win.appendChild(t);setTimeout(()=>t.remove(),2600)},lock:()=>$('.tb-lock',win).classList.add('on'),st};
 
-  function rTabs(){if(!tabsEl)return;tabsEl.innerHTML=tabs.map(t=>`<span class="${t.id==st.tab&&!t.menu?'on':''}${t.ctx?' ctxt':''}${t.id=='file'?' file':''}" data-t="tab:${t.id}">${t.l}</span>`).join('')}
+  function rTabs(){if(!tabsEl)return;if(mbEl)mbEl.innerHTML=tabs.filter(t=>t.mb).map(t=>`<span class="${t.app?'mapp':''}" data-t="tab:${t.id}">${t.l}</span>`).join('');tabsEl.innerHTML=tabs.filter(t=>!t.mb).map(t=>`<span class="${t.id==st.tab&&!t.menu?'on':''}${t.ctx?' ctxt':''}${t.id=='file'?' file':''}" data-t="tab:${t.id}">${t.l}</span>`).join('')}
   function rRib(){if(!ribEl)return;const g=ribbon[st.tab];
     if(!g||!g.length){ribEl.innerHTML='<div class="rib-empty">הכפתורים בלשונית הזו אינם חלק מהתרגיל</div>';return}
     ribEl.innerHTML=g.map(gr=>`<div class="grp"><div class="gb${gr.col?' col':''}">${gr.b.map(b=>b.kind=='check'?`<div class="rchk${st.checks[b.id]?' on':''}" data-t="${b.id}"><i></i>${b.l}</div>`:`<div class="rb" data-t="${b.id}">${ico(b.ic)}<span>${b.l}${b.menu?' ▾':''}</span></div>`).join('')}</div><div class="gl">${gr.l}</div></div>`).join('')}
@@ -796,7 +872,7 @@ function simEx(host,foot,ex,done,mode){
     else{const d=defs[id]||{};
       if(ctx[id]){openMenu(id,el,false,pos)}
       else if(d.menu||el.dataset.menu){openMenu(d.menu||el.dataset.menu,el,!!el.closest('.menu'))}
-      else if(d.dlg){openDlg(d.dlg)}
+      else if(d.dlg||el.dataset.dlg){openDlg(d.dlg||el.dataset.dlg)}
       else if(d.side){st.side[st.dlg]=id;rDlg()}
       else if(d.kind=='check'){st.checks[id]=!st.checks[id];if(el.closest('.menu'))el.classList.toggle('on');else if(el.closest('.dlg'))rDlg();else rRib()}
       else if(d.kind=='radio'){st.radio[d.g]=id;rDlg()}
@@ -816,7 +892,7 @@ function simEx(host,foot,ex,done,mode){
   function wrong(el,msg){st.err++;el&&(el.classList.remove('wrongflash'),void el.offsetWidth,el.classList.add('wrongflash'));
     if(mode=='guided')hint(msg||('לא כאן. '+ex.steps[st.step].h),true);else hint(st.err>=3?`רמז: ${ex.steps[st.step].h}`:(msg||'לא זה. נסו שוב.'),true)}
   function finish(){st.fin=true;clearPulse();setTimeout(()=>closeMenus(),700);ex.done&&ex.done(api);done(mode=='challenge'?'c':'g',st.err)}
-  function handle(e,rc){if(mode=='demo'||st.fin)return;const el=e.target.closest('[data-t]');
+  function handle(e,rc){if(mode=='demo'){if(st.alive){st.alive=false;setTimeout(()=>mountEx(EXI,'guided'),0)}return}if(st.fin)return;const el=e.target.closest('[data-t]');
     if(!el||!el.dataset.t){if(!e.target.closest('.menu,.dlg'))closeMenus();return}
     const id=el.dataset.t,s=ex.steps[st.step];
     if(s&&id===s.t){if(!!s.rc!==rc){wrong(el,s.rc?'כאן צריך ללחוץ על <b>המקש הימני</b> בעכבר.':'כאן מספיקה לחיצה רגילה (מקש שמאלי).');return}
@@ -842,7 +918,13 @@ function simEx(host,foot,ex,done,mode){
 
 /* ===================== keys drill ===================== */
 const CODE_LBL=c=>c.replace(/^Key/,'').replace(/^Digit/,'').replace('BracketRight',']').replace('BracketLeft','[').replace('Minus','-').replace('NumpadSubtract','-');
-function parseCombo(c){const p=c.split('+');const code=p.pop();return {ctrl:p.includes('Ctrl'),shift:p.includes('Shift'),alt:p.includes('Alt'),code,label:[...p,CODE_LBL(code)].join('+')}}
+const modLbl=x=>OS==='mac'?({Meta:'⌘',Ctrl:'⌃',Alt:'⌥'}[x]||x):({Meta:'Ctrl'}[x]||x);
+const keyLbl=c=>{const l=CODE_LBL(c);return OS==='mac'&&l==='Enter'?'Return':l};
+function parseCombo(c){const p=c.split('+');const code=p.pop();return {meta:p.includes('Meta'),ctrl:p.includes('Ctrl'),shift:p.includes('Shift'),alt:p.includes('Alt'),code,label:[...p.map(modLbl),keyLbl(code)].join('+')}}
+const taskCombo=t=>OS==='mac'?(t.cm||t.c.replace(/^Ctrl\+/,'Meta+')):t.c;
+function comboHit(e,c,t){const codeOk=e.code===c.code||(t&&t.key&&e.key===t.key);
+  if(OS==='mac')return codeOk&&e.metaKey===c.meta&&e.ctrlKey===c.ctrl&&e.altKey===c.alt&&e.shiftKey===c.shift;
+  return codeOk&&(e.ctrlKey||e.metaKey)===(c.ctrl||c.meta)&&e.altKey===c.alt&&e.shiftKey===c.shift}
 let KEYHANDLER=null;
 document.addEventListener('keydown',e=>{if(KEYHANDLER)KEYHANDLER(e,'down')},true);
 document.addEventListener('keyup',e=>{if(KEYHANDLER)KEYHANDLER(e,'up')},true);
@@ -854,16 +936,16 @@ function keysEx(host,foot,ex,done){
     $('.kh',host).innerHTML=`לחצו על הקיצור במקלדת שלכם <button class="bt" data-rev style="padding:4px 10px;font-size:12px">הציגו לי את המקשים</button>`;
     $('.kfb',host).textContent='';$$('.kx-prog i',host).forEach((e,j)=>e.className=j<i?'d':j==i?'n':'');
     foot.innerHTML=`<div class="hintbar"><b>מקלדת אמיתית</b><span class="grow">${ex.note||'הקיצורים נקלטים מהמקלדת שלכם. אם המקלדת לא מגיבה – לחצו קודם בתוך הדף.'}</span></div>`}
-  function reveal(){shown=true;$('.kh',host).innerHTML=`המקשים: ${kc(parseCombo(T[i].c).label)} <button class="bt" data-skip style="padding:4px 10px;font-size:12px">המקלדת לא מגיבה? סמנו כבוצע</button>`}
+  function reveal(){shown=true;$('.kh',host).innerHTML=`המקשים: ${kc(parseCombo(taskCombo(T[i])).label)} <button class="bt" data-skip style="padding:4px 10px;font-size:12px">המקלדת לא מגיבה? סמנו כבוצע</button>`}
   function ok(){const t=T[i];t.fx&&t.fx(doc,api);$('.kfb',host).className='kfb ok';$('.kfb',host).textContent='✓ '+(t.ok||'מצוין!');i++;
     if(i>=T.length){$$('.kx-prog i',host).forEach(e=>e.className='d');$$('.fsel',doc).forEach(e=>e.classList.remove('fsel'));KEYHANDLER=null;$('.kp',host).textContent='כל הקיצורים בוצעו!';$('.kh',host).textContent='';setTimeout(()=>done('g'),500)}
     else setTimeout(show,750)}
   const api={toast:m=>{const t=document.createElement('div');t.className='wtoast';t.textContent=m;host.querySelector('.panel').appendChild(t);setTimeout(()=>t.remove(),2200)}};
   host.addEventListener('click',e=>{if(e.target.closest('[data-rev]'))reveal();if(e.target.closest('[data-skip]'))ok()});
   KEYHANDLER=(e,ph)=>{if(ph!=='down'||i>=T.length)return;if(['Control','Shift','Alt','Meta','AltGraph'].includes(e.key))return;
-    const c=parseCombo(T[i].c);const ctrl=e.ctrlKey||e.metaKey;
-    if(ctrl===c.ctrl&&e.shiftKey===c.shift&&e.altKey===c.alt&&e.code===c.code){e.preventDefault();e.stopPropagation();ok();return}
-    if(ctrl||e.altKey){e.preventDefault();bad++;const got=[ctrl?'Ctrl':'',e.altKey?'Alt':'',e.shiftKey?'Shift':'',CODE_LBL(e.code)].filter(Boolean).join('+');
+    const c=parseCombo(taskCombo(T[i]));
+    if(comboHit(e,c,T[i])){e.preventDefault();e.stopPropagation();ok();return}
+    if(e.ctrlKey||e.metaKey||e.altKey){e.preventDefault();bad++;const got=(OS==='mac'?[e.metaKey?'⌘':'',e.ctrlKey?'⌃':'',e.altKey?'⌥':'',e.shiftKey?'Shift':'',keyLbl(e.code)]:[e.ctrlKey||e.metaKey?'Ctrl':'',e.altKey?'Alt':'',e.shiftKey?'Shift':'',keyLbl(e.code)]).filter(Boolean).join('+');
       $('.kfb',host).className='kfb';$('.kfb',host).innerHTML=`לחצתם ${kc(got)} – זה לא הקיצור הנכון.`;if(bad>=2&&!shown)reveal()}};
   show();
   return {destroy(){KEYHANDLER=null}}
@@ -880,14 +962,22 @@ const VK_MAIN=[[K('Esc','Escape'),G(1),K('F1'),K('F2'),K('F3'),K('F4'),G(.5),K('
  [K('Ctrl','ControlLeft',1.25),K('⊞','MetaLeft',1.25),K('Alt','AltLeft',1.25),K('','Space',6.25),K('Alt Gr','AltRight',1.25),K('Fn','Fn',1.25),K('☰','ContextMenu',1.25),K('Ctrl','ControlRight',1.25)]];
 const VK_NAV=[[K('PrtSc','PrintScreen'),K('ScrLk','ScrollLock'),K('Pause','Pause')],[K('Insert','Insert'),K('Home','Home'),K('PgUp','PageUp')],[K('Delete','Delete'),K('End','End'),K('PgDn','PageDown')],[G(1),G(1),G(1)],[G(1),K('↑','ArrowUp'),G(1)],[K('←','ArrowLeft'),K('↓','ArrowDown'),K('→','ArrowRight')]];
 const VK_NUM=[[G(1),G(1),G(1),G(1)],[K('Num','NumLock'),K('/','NumpadDivide'),K('*','NumpadMultiply'),K('-','NumpadSubtract')],[K('7','Numpad7'),K('8','Numpad8'),K('9','Numpad9'),K('+','NumpadAdd')],[K('4','Numpad4'),K('5','Numpad5'),K('6','Numpad6'),G(1)],[K('1','Numpad1'),K('2','Numpad2'),K('3','Numpad3'),K('Enter','NumpadEnter')],[K('0','Numpad0',2),K('.','NumpadDecimal'),G(1)]];
+const VKM_MAIN=[[K('esc','Escape'),G(1),K('F1'),K('F2'),K('F3'),K('F4'),G(.5),K('F5'),K('F6'),K('F7'),K('F8'),G(.5),K('F9'),K('F10'),K('F11'),K('F12')],
+ [K('`','Backquote'),...'1234567890'.split('').map(d=>K(d,'Digit'+d)),K('-','Minus'),K('=','Equal'),K('delete','Backspace',2)],
+ [K('tab','Tab',1.5),...'QWERTYUIOP'.split('').map(l=>K(l,'Key'+l)),K('[','BracketLeft'),K(']','BracketRight'),K('\\','Backslash',1.5)],
+ [K('caps lock','CapsLock',1.75),...'ASDFGHJKL'.split('').map(l=>K(l,'Key'+l)),K(';','Semicolon'),K("'",'Quote'),K('return','Enter',2.25)],
+ [K('⇧ shift','ShiftLeft',2.25),...'ZXCVBNM'.split('').map(l=>K(l,'Key'+l)),K(',','Comma'),K('.','Period'),K('/','Slash'),K('⇧ shift','ShiftRight',2.75)],
+ [K('⌃ control','ControlLeft',1.25),K('⌥ option','AltLeft',1.25),K('⌘ command','MetaLeft',1.5),K('','Space',7),K('⌘ command','MetaRight',1.5),K('⌥ option','AltRight',1.25),K('⌃ control','ControlRight',1.25)]];
+const VKM_NAV=[[K('F13'),K('F14'),K('F15')],[K('fn','Fn'),K('home','Home'),K('page up','PageUp')],[K('⌦','Delete'),K('end','End'),K('page down','PageDown')],[G(1),G(1),G(1)],[G(1),K('↑','ArrowUp'),G(1)],[K('←','ArrowLeft'),K('↓','ArrowDown'),K('→','ArrowRight')]];
+const VKM_NUM=[[G(1),G(1),G(1),G(1)],[K('clear','NumLock'),K('=','NumpadEqual'),K('/','NumpadDivide'),K('*','NumpadMultiply')],[K('7','Numpad7'),K('8','Numpad8'),K('9','Numpad9'),K('-','NumpadSubtract')],[K('4','Numpad4'),K('5','Numpad5'),K('6','Numpad6'),K('+','NumpadAdd')],[K('1','Numpad1'),K('2','Numpad2'),K('3','Numpad3'),K('enter','NumpadEnter')],[K('0','Numpad0',2),K('.','NumpadDecimal'),G(1)]];
 const normCode=c=>c.replace(/(Left|Right)$/,'').replace('NumpadEnter','Enter');
 function vkHtml(){const row=(r,i)=>`<div class="vkr${i==0?' f':''}">${r.map(k=>k.gap?`<div class="vkey gap" style="--w:${k.w}"></div>`:`<div class="vkey" style="--w:${k.w}" data-code="${k.c}"><span>${k.l}</span>${HEB[k.c]?`<span class="h">${HEB[k.c]}</span>`:''}</div>`).join('')}</div>`;
-  return `<div class="vk"><div class="vkb">${VK_MAIN.map(row).join('')}</div><div class="vkb">${VK_NAV.map(row).join('')}</div><div class="vkb">${VK_NUM.map(row).join('')}</div></div>`}
+  const m=OS==='mac';return `<div class="vk${m?' mac':''}"><div class="vkb">${(m?VKM_MAIN:VK_MAIN).map(row).join('')}</div><div class="vkb">${(m?VKM_NAV:VK_NAV).map(row).join('')}</div><div class="vkb">${(m?VKM_NUM:VK_NUM).map(row).join('')}</div></div>`}
 function kbEx(host,foot,ex,done){
   host.innerHTML=`<div class="panel"><div class="vkw"><div class="vkq"><div class="kp"></div><div class="kh"></div></div><div class="vkbox" style="width:100%;display:flex;justify-content:center">${vkHtml()}</div><div class="vkdone"></div></div></div>`;
   const box=$('.vkbox',host);const fit=()=>{const w=box.clientWidth-10;box.style.setProperty('--u',Math.max(16,Math.min(40,w/24.6))+'px')};fit();const ro=new ResizeObserver(fit);ro.observe(box);
   let i=0,busy=false;const it=ex.items;
-  function show(){$('.kp',host).innerHTML=it[i].p;$('.kh',host).className='kh';$('.kh',host).textContent=`${i+1} מתוך ${it.length} · לחצו על המקש במקלדת שעל המסך או במקלדת שלכם`;
+  function show(){$('.kp',host).innerHTML=it[i].p;$('.kh',host).className='kh';$('.kh',host).innerHTML=`${i+1} מתוך ${it.length} · לחצו על המקש במקלדת שעל המסך או במקלדת שלכם${it[i].note?`<br><b style="color:var(--a)">${it[i].note}</b>`:''}`;
     foot.innerHTML=`<div class="hintbar"><b>מקלדת</b><span class="grow">${ex.note||'המקלדת על המסך זהה למקלדת שבסדנה. גם לחיצה על המקלדת האמיתית נקלטת.'}</span></div>`}
   function tryKey(code,el){if(busy||i>=it.length)return;el=el||$(`.vkey[data-code="${code}"]`,host)||$$('.vkey',host).find(k=>normCode(k.dataset.code)==normCode(code));
     if(normCode(code)===normCode(it[i].k)){busy=true;el&&el.classList.add('ok');$('.kh',host).className='kh ok';$('.kh',host).innerHTML='✓ נכון – '+(it[i].e||'');
@@ -895,7 +985,7 @@ function kbEx(host,foot,ex,done){
       setTimeout(()=>{el&&el.classList.remove('ok');busy=false;i++;if(i>=it.length){KEYHANDLER=null;$('.kp',host).textContent='מצאתם את כל המקשים!';$('.kh',host).textContent='';done('g')}else show()},1100)}
     else if(el){el.classList.add('bad');const nm=el.querySelector('span').textContent||'רווח';el.insertAdjacentHTML('beforeend',`<span class="tip">זה ${nm}</span>`);$('.kh',host).className='kh bad';$('.kh',host).textContent='לא זה – נסו שוב.';setTimeout(()=>{el.classList.remove('bad');el.querySelector('.tip')?.remove()},900)}}
   host.addEventListener('click',e=>{const k=e.target.closest('.vkey[data-code]');if(k)tryKey(k.dataset.code,k)});
-  KEYHANDLER=(e,ph)=>{const pr=e.code==='PrintScreen';if(ph==='up'&&!pr)return;if(ph==='down'&&pr)return;if(e.code==='Tab'||e.code==='Escape'||/^F\d/.test(e.code)||e.code.startsWith('Page')||e.code==='Home'||e.code==='End'||e.code==='Backspace')e.preventDefault();tryKey(e.code)};
+  KEYHANDLER=(e,ph)=>{const pr=e.code==='PrintScreen';if(ph==='up'&&!pr)return;if(ph==='down'&&pr)return;if(e.repeat)return;if(e.code==='Tab'||e.code==='Escape'||/^F\d/.test(e.code)||e.code.startsWith('Page')||e.code==='Home'||e.code==='End'||e.code==='Backspace')e.preventDefault();tryKey(e.code)};
   show();return {destroy(){KEYHANDLER=null;ro.disconnect()}}
 }
 
@@ -984,8 +1074,9 @@ const ICR=[[/שינוי שפה|שפה במחשב/,'globe'],[/שחזור קבצי
 const iconFor=t=>{for(const [r,n] of ICR)if(r.test(t))return n;return 'doc'};
 const KEYCODE={'-':['NumpadSubtract'],'Page Up':['PageUp'],'Page Down':['PageDown'],Home:['Home'],End:['End'],Delete:['Delete'],PrtSc:['PrintScreen'],Backspace:['Backspace'],F4:['F4'],Esc:['Escape'],Tab:['Tab'],'Caps Lock':['CapsLock'],Shift:['ShiftLeft','ShiftRight'],Ctrl:['ControlLeft','ControlRight'],Win:['MetaLeft'],Alt:['AltLeft']};
 
+let CH=[],GA={};
 const FLAT=[];
-function initFlat(){CH.forEach((c,ci)=>c.lessons.forEach((l,li)=>{l.id=c.id+'-'+li;l.code=(ci+1)+'.'+(li+1);FLAT.push({c,ci,l,li})}))}
+function initFlat(){FLAT.length=0;CH.forEach((c,ci)=>c.lessons.forEach((l,li)=>{l.id=c.id+'-'+li;l.code=(ci+1)+'.'+(li+1);FLAT.push({c,ci,l,li})}))}
 const isDone=l=>{const d=P.done[l.id];return d&&l.ex.every((_,i)=>d[i])};
 const chDone=c=>c.lessons.filter(isDone).length;
 function setTheme(c){const r=document.documentElement.style;const col=c?c.col:{a:'#18221D',a2:'#4A5B52',soft:'#ECE9E1',paper:'#F6F5F1',tab:'#E6E0D2'};
@@ -995,9 +1086,18 @@ const app=()=>document.getElementById('app');
 function nav(c){const n=FLAT.filter(f=>isDone(f.l)).length,pct=Math.round(n/FLAT.length*100);
   return `<header class="nav"><div class="brand" data-home><img src="${EMBLEM}" alt="סמל בית הספר">לומדת אופיס</div>
   <nav class="pills">${CH.map(x=>`<button class="pill${c&&x.id==c.id?' on':''}" data-ch="${x.id}"><i style="background:${x.col.a2}"></i>${x.name}${chDone(x)===x.lessons.length?'<span class="dn">✓</span>':''}</button>`).join('')}</nav>
-  <div class="prog">${n} מתוך ${FLAT.length} נושאים<div class="ring2" style="background:conic-gradient(var(--a) 0 ${pct}%,rgba(0,0,0,.08) ${pct}% 100%)"><b>${pct}%</b></div></div></header>`}
+  <div class="navr"><div class="ost" title="סוג המחשב"><button class="${OS=='win'?'on':''}" data-os="win">Windows</button><button class="${OS=='mac'?'on':''}" data-os="mac">Mac</button></div>
+  <div class="prog">${n} מתוך ${FLAT.length} נושאים<div class="ring2" style="background:conic-gradient(var(--a) 0 ${pct}%,rgba(0,0,0,.08) ${pct}% 100%)"><b>${pct}%</b></div></div></div></header>`}
 
 /* ---------- cover ---------- */
+function detectOS(){try{const p=(navigator.userAgentData&&navigator.userAgentData.platform)||navigator.platform||'';return /mac/i.test(p)?'mac':'win'}catch(e){return 'win'}}
+function setOS(os){OS=os==='mac'?'mac':'win';P.os=OS;save();CH=OS==='mac'?CH_MAC:CH_WIN;GA=OS==='mac'?GUESS_MAC:GUESS;initFlat();document.documentElement.dataset.pf=OS}
+const LAPTOP=s=>`<svg viewBox="0 0 120 84" class="lap"><rect x="16" y="6" width="88" height="56" rx="6" fill="#fff" stroke="currentColor" stroke-width="3"/><rect x="24" y="14" width="72" height="40" rx="2" fill="var(--soft)"/><text x="60" y="42" text-anchor="middle" font-size="22" font-weight="700" fill="currentColor" font-family="Rubik,Arial">${s}</text><path d="M4 66h112l-6 10H10z" fill="currentColor" opacity=".85"/></svg>`;
+function renderChooser(){destroyEx();setTheme(null);CUR=null;app().className='app';const det=detectOS();
+  app().innerHTML=`<section class="osc"><img class="osc-emb" src="${EMBLEM}" alt="סמל בית הספר"><div class="cv-k">לומדת אופיס · בית הספר להדרכה</div><h2>על איזה מחשב<br><em>אתם עובדים?</em></h2>
+   <p>הלומדה תתאים את קיצורי המקשים, המקלדת והמסלולים בתפריטים למחשב שלכם. אפשר להחליף בכל רגע מהסרגל העליון.</p>
+   <div class="osg"><button class="osb${det=='win'?' sug':''}" data-os="win">${LAPTOP('⊞')}<b>Windows</b><span>Ctrl · Alt · ⊞ Win</span>${det=='win'?'<em>זוהה במחשב הזה</em>':''}</button>
+   <button class="osb${det=='mac'?' sug':''}" data-os="mac">${LAPTOP('⌘')}<b>Mac</b><span>⌘ command · ⌥ option · ⌃ control</span>${det=='mac'?'<em>זוהה במחשב הזה</em>':''}</button></div></section>`;window.scrollTo(0,0)}
 function renderCover(){destroyEx();setTheme(null);CUR=null;P.pos=null;save();app().className='app';
   const doneN=FLAT.filter(f=>isDone(f.l)).length;const resume=FLAT.findIndex(f=>!isDone(f.l));
   app().innerHTML=`${nav(null)}<section class="cv"><div class="cv-l">
@@ -1027,9 +1127,11 @@ function tileHtml(c,i,big,wide){const len=clen(c);
     <div class="tb2"><h4>${c.t}<span>↺</span></h4><div class="verdict"></div>${backHtml(c)}</div></div></div>`}
   return `<div class="tile${w}" data-tile="${i}"><div class="tin"><div class="tf${big?' hero2':''}"><div class="ic">${ico(ic)}</div><span class="rot">↻</span>${big?`<div class="bigic">${ico(ic)}</div>`:''}<h3>${c.t}</h3><p>${sub}</p></div>
     <div class="tb2"><h4>${c.t}<span>↺</span></h4>${backHtml(c)}</div></div></div>`}
-function learnHtml(c,l){const G=(GUESS[l.id]||{});
+function learnHtml(c,l){const G=(GA[l.id]||{});
   let body='';
-  if(l.keyc){body=`<div class="kbshow"><div class="vkbox" style="width:100%;display:flex;justify-content:center">${vkHtml()}</div></div><div class="bento keys">${l.keyc.map((k,i)=>`<div class="tile kt" data-tile="${i}" data-codes="${(KEYCODE[k.k]||[]).join(' ')}"><div class="tin"><div class="tf">${kc(k.k,1)}<p>מה הוא עושה?</p><span class="rot">↻</span></div><div class="tb2"><h4>${k.k}<span>↺</span></h4><p>${k.d}</p></div></div></div>`).join('')}</div>`}
+  if(l.keyc){body=`<div class="kstage"><div class="kbx"><div class="vkbox">${vkHtml()}</div></div><div class="kspot"><div class="ks-empty"><span class="ks-i">⌨</span><b>לחצו על מקש</b><p>על המקלדת או על אחד המקשים למטה – וההסבר יופיע כאן.</p>${l.pull?`<p class="ks-pull">${l.pull}</p>`:''}</div></div></div>
+    <div class="kgrid">${l.keyc.map((k,i)=>`<button class="kt2" data-ki="${i}"><span class="kin">${kc(k.k,1)}<em>?</em></span></button>`).join('')}<div class="kg-done">🎉 למדתם את כל ${l.keyc.length} המקשים! לחצו על מקש בפס למטה כדי לראות שוב את ההסבר.</div></div>
+    <div class="ktray"><span class="kt-l">מקשים שלמדתם <b>0</b>/${l.keyc.length}</span><div class="kt-chips"></div></div>`}
   else if(l.cards&&l.cards[0].rows){body=`<div class="tryit"><span class="ti">⌨</span><div><b>נסו עכשיו:</b> לחצו על קיצור כלשהו במקלדת שלכם – והוא יידלק ברשימה.</div></div>${cardHtml(l.cards[0],0)}`}
   else{const it=l.cards.map((x,i)=>({c:G[i]?Object.assign({},x,{g:G[i]}):x,i,len:clen(x)}));
     let big=null;if(it.length>3){big=it.filter(x=>!x.c.g).sort((a,b)=>b.len-a.len)[0]}
@@ -1038,10 +1140,16 @@ function learnHtml(c,l){const G=(GUESS[l.id]||{});
     const ord=big?[big,...it.filter(x=>x!==big)]:it;
     body=`<div class="bento">${ord.map(x=>tileHtml(x.c,x.i,x.big,x.wide)).join('')}</div>`}
   const any=!!(l.keyc||(l.cards&&!l.cards[0].rows));
-  return `<section class="learn"><div class="hero"><div><div class="kick">${c.en} · ${l.code}</div><h1>${l.h}</h1><p class="lead">${l.lead}</p></div>${any?`<div class="hint2"><span class="sp">↻</span><span><b>לחצו על אריח</b> כדי להפוך אותו</span></div>`:''}</div>
-   ${body}${l.pull?`<div class="quote"><span>”</span>${l.pull}</div>`:''}
+  return `<section class="learn${l.keyc?' compact':''}"><div class="hero"><div><div class="kick">${c.en} · ${l.code}</div><h1>${l.h}</h1><p class="lead">${l.lead}</p></div>${any&&!l.keyc?`<div class="hint2"><span class="sp">↻</span><span><b>לחצו על אריח</b> כדי להפוך אותו</span></div>`:''}</div>
+   ${body}${l.pull&&!l.keyc?`<div class="quote"><span>”</span>${l.pull}</div>`:''}
    <div class="cta"><div class="tx"><b>הבנתם את הרעיון?</b>עכשיו מתרגלים – ${l.ex.length} משימות. אפשר לחזור להסבר בכל רגע.</div><button class="go" data-page="practice">עוברים לתרגול <span>←</span></button></div></section>`}
-function cardHtml(c){return `<div class="sidx"><input type="search" placeholder="חפשו קיצור או פעולה… (למשל: הדגשה, Ctrl+S)">${c.rows.map(g=>`<div class="sg"><h4>${g[0]}</h4><div class="sgr">${g[1].map(r=>`<div class="srow" data-s="${(r[0]+' '+r[1]).toLowerCase()}" data-k="${r[0].replace(/\s/g,'').toUpperCase()}"><span>${r[1]}</span>${kc(r[0])}</div>`).join('')}</div></div>`).join('')}<div class="empty" style="display:none">לא נמצא קיצור מתאים.</div></div>`}
+const ARW={'←':'ARROWLEFT','→':'ARROWRIGHT','↑':'ARROWUP','↓':'ARROWDOWN'};
+function keyCanon(k){k=k.replace(/\s/g,'');if(ARW[k])return ARW[k];if(OS==='mac'&&k==='delete')return 'BACKSPACE';k=k.toUpperCase();return {ESC:'ESCAPE',RETURN:'ENTER'}[k]||k}
+function rowCanon(str){const p=str.split(/\+(?!$)/);const key=p.pop();const M={Ctrl:'C','⌘':'M','⌃':'C','⌥':'A',Option:'A',Alt:'A',Shift:'S'};
+  return p.map(x=>M[x]||'').filter(Boolean).sort().join('')+'|'+keyCanon(key)}
+function evCanon(e){const m=OS==='mac'?[e.metaKey?'M':'',e.ctrlKey?'C':'',e.altKey?'A':'',e.shiftKey?'S':'']:[(e.ctrlKey||e.metaKey)?'C':'',e.altKey?'A':'',e.shiftKey?'S':''];
+  return m.filter(Boolean).sort().join('')+'|'+keyCanon(CODE_LBL(e.code))}
+function cardHtml(c){return `<div class="sidx"><input type="search" placeholder="חפשו קיצור או פעולה… (למשל: הדגשה, Ctrl+S)">${c.rows.map(g=>`<div class="sg"><h4>${g[0]}</h4><div class="sgr">${g[1].map(r=>`<div class="srow" data-s="${(r[0]+' '+r[1]).toLowerCase()}" data-k="${rowCanon(r[0])}"><span>${r[1]}</span>${kc(r[0])}</div>`).join('')}</div></div>`).join('')}<div class="empty" style="display:none">לא נמצא קיצור מתאים.</div></div>`}
 function renderLesson(idx,page){destroyEx();closeDrawer();const {c,l}=FLAT[idx];CUR=idx;PAGE=l.quiz?'practice':(page||'learn');P.pos=idx;save();setTheme(c);
   app().className='app'+(PAGE=='practice'?' fixed':'');
   app().innerHTML=`${nav(c)}${bar(c,l,idx)}${PAGE=='learn'?learnHtml(c,l):`<div class="ptop" id="ptop"></div><div class="prac" id="prac"><div class="exhost"></div><div class="exfoot"></div></div>`}<div class="dscrim" data-dclose></div><aside class="drawer"><div class="dh">תזכורת: ${l.k}<button data-dclose>✕</button></div><div class="db">${(l.cards&&!l.cards[0].rows?l.cards:[]).map(x=>`<div class="dc"><b>${x.t}</b>${x.d?`<p>${x.d}</p>`:''}${x.path?`<p style="color:var(--a);font-weight:500">${x.path}</p>`:''}${x.keys?`<div style="margin-top:6px;display:flex;gap:6px">${x.keys.map(k=>kc(k)).join('')}</div>`:''}</div>`).join('')}${(l.keyc||[]).map(k=>`<div class="dc"><b>${k.k}</b><p>${k.d}</p></div>`).join('')}${l.cards&&l.cards[0].rows?l.cards[0].rows.map(g=>`<div class="dc"><b>${g[0]}</b>${g[1].map(r=>`<p>${r[0]} – ${r[1]}</p>`).join('')}</div>`).join(''):''}</div></aside>`;
@@ -1055,13 +1163,26 @@ function initLearn(l){const root=$('.learn');
       setTimeout(()=>t.classList.add('flip'),900);return}
     t.classList.toggle('flip');
     if(t.dataset.codes!=null){$$('.vkey.lit',root).forEach(k=>k.classList.remove('lit'));if(t.classList.contains('flip'))t.dataset.codes.split(' ').forEach(cd=>$(`.vkey[data-code="${cd}"]`,root)?.classList.add('lit'))}});
-  const box=$('.vkbox',root);if(box){const fit=()=>box.style.setProperty('--u',Math.max(16,Math.min(40,(box.clientWidth-10)/24.6))+'px');fit();const ro=new ResizeObserver(fit);ro.observe(box);ACTIVE={destroy(){ro.disconnect()}};
-    box.addEventListener('click',e=>{const k=e.target.closest('.vkey[data-code]');if(!k)return;const t=$$('.tile.kt',root).find(t=>t.dataset.codes.split(' ').includes(k.dataset.code));
-      $$('.vkey.lit',root).forEach(x=>x.classList.remove('lit'));if(t){k.classList.add('lit');t.classList.add('flip');t.scrollIntoView({block:'nearest',behavior:'smooth'})}else{k.classList.add('bad');setTimeout(()=>k.classList.remove('bad'),500)}})}
+  if(l.keyc)initKeys(l,root);
   const inp=$('.sidx input',root);if(inp){inp.addEventListener('input',()=>{const v=inp.value.trim().toLowerCase();let any=0;$$('.srow').forEach(r=>{const s=!v||r.dataset.s.includes(v);r.style.display=s?'':'none';any+=s});$$('.sg').forEach(g=>g.style.display=$$('.srow',g).some(r=>r.style.display!=='none')?'':'none');$('.sidx .empty').style.display=any?'none':''});
-    KEYHANDLER=(e,ph)=>{if(ph!=='down'||e.target===inp||['Control','Shift','Alt','Meta'].includes(e.key))return;const nm=CODE_LBL(e.code).replace('PageUp','PAGEUP').replace('PageDown','PAGEDOWN').replace('Escape','ESC').toUpperCase();
-      const k=[e.ctrlKey||e.metaKey?'CTRL':'',e.altKey?'ALT':'',e.shiftKey?'SHIFT':'',nm].filter(Boolean).join('+');const r=$$('.srow').find(r=>r.dataset.k===k);
+    KEYHANDLER=(e,ph)=>{if(ph!=='down'||e.target===inp||['Control','Shift','Alt','Meta'].includes(e.key))return;
+      const k=evCanon(e);const r=$$('.srow').find(r=>r.dataset.k===k);
       if(r){e.preventDefault();$$('.srow.hit').forEach(x=>x.classList.remove('hit'));void r.offsetWidth;r.classList.add('hit');r.scrollIntoView({block:'center',behavior:'smooth'})}}}}
+function keyCodes(k){return (k.codes||(KEYCODE[k.k]||[]).join(' ')).split(' ').filter(Boolean)}
+function initKeys(l,root){const box=$('.vkbox',root),spot=$('.kspot',root),grid=$('.kgrid',root),chips=$('.kt-chips',root);const learned=new Set();let cur=null;
+  const fit=()=>{box.style.setProperty('--u','40px');const w=box.clientWidth-8;let u=Math.min(40,w/24.6);box.style.setProperty('--u',u+'px');
+    if(innerWidth>1150){const over=document.documentElement.scrollHeight-innerHeight;if(over>0)u=Math.max(18,u-over/7.3-1)}box.style.setProperty('--u',u+'px')};
+  fit();const ro=new ResizeObserver(()=>fit());ro.observe(box.parentElement);ACTIVE={destroy(){ro.disconnect()}};
+  function light(i){$$('.vkey.lit',root).forEach(x=>x.classList.remove('lit'));keyCodes(l.keyc[i]).forEach(cd=>$(`.vkey[data-code="${cd}"]`,root)?.classList.add('lit'))}
+  function showSpot(i){const k=l.keyc[i];spot.innerHTML=`<div class="ks-card" style="animation:flipin .5s cubic-bezier(.3,.7,.2,1)"><div class="ks-n">מקש ${i+1} מתוך ${l.keyc.length}</div>${kc(k.k,1)}<p>${k.d}</p></div>`;light(i)}
+  function learn(i){if(learned.has(i))return;learned.add(i);const t=$(`.kt2[data-ki="${i}"]`,grid);
+    t.classList.add('flip');setTimeout(()=>{t.classList.add('gone');setTimeout(()=>{t.remove();if(!$('.kt2',grid))grid.classList.add('all')},380);
+      chips.insertAdjacentHTML('beforeend',`<button class="kchip" data-kc="${i}">${kc(l.keyc[i].k)}</button>`);$('.kt-l b',root).textContent=learned.size},650)}
+  function pick(i){cur=i;showSpot(i);learn(i);$$('.kchip.on',root).forEach(x=>x.classList.remove('on'));$(`.kchip[data-kc="${i}"]`,root)?.classList.add('on')}
+  root.addEventListener('click',e=>{const t=e.target.closest('.kt2');if(t&&!t.classList.contains('flip')){pick(+t.dataset.ki);return}
+    const c=e.target.closest('.kchip');if(c){pick(+c.dataset.kc);return}
+    const k=e.target.closest('.vkey[data-code]');if(k){const i=l.keyc.findIndex(x=>keyCodes(x).includes(k.dataset.code));
+      if(i>=0)pick(i);else{k.classList.add('bad');spot.innerHTML=`<div class="ks-empty"><span class="ks-i">⌨</span><b>${k.querySelector('span').textContent||'רווח'}</b><p>המקש הזה לא חלק מ־${l.keyc.length} המקשים של הנושא. נסו מקש אחר.</p></div>`;setTimeout(()=>k.classList.remove('bad'),500)}}})}
 function destroyEx(){if(ACTIVE){ACTIVE.destroy();ACTIVE=null}KEYHANDLER=null}
 function openDrawer(){$('.drawer')?.classList.add('open');$('.dscrim')?.classList.add('open')}
 function closeDrawer(){$('.drawer')?.classList.remove('open');$('.dscrim')?.classList.remove('open')}
@@ -1088,8 +1209,9 @@ function goBack(){if(CUR==null)return renderCover();const {l}=FLAT[CUR];
 
 document.addEventListener('click',e=>{
   if(!e.target.closest('.crumb'))$('.crumb.open')?.classList.remove('open');
-  const t=e.target.closest('[data-home],[data-ch],[data-goto],[data-ex],[data-mode],[data-go],[data-reset],[data-page],[data-back],[data-crumb],[data-remind],[data-dclose]');if(!t)return;
-  if(t.dataset.home!=null)renderCover();
+  const t=e.target.closest('[data-home],[data-ch],[data-goto],[data-ex],[data-mode],[data-go],[data-reset],[data-page],[data-back],[data-crumb],[data-remind],[data-dclose],[data-os]');if(!t)return;
+  if(t.dataset.os){const first=!P.os;setOS(t.dataset.os);if(first||CUR==null)renderCover();else renderLesson(CUR,PAGE)}
+  else if(t.dataset.home!=null)renderCover();
   else if(t.dataset.reset!=null){if(confirm('לאפס את כל ההתקדמות בלומדה?')){P={done:{},pos:null,qz:{}};save();renderCover()}}
   else if(t.dataset.goto!=null){if(t.dataset.goto==='home')renderCover();else renderLesson(+t.dataset.goto,'learn')}
   else if(t.dataset.ch){const c=CH.find(x=>x.id==t.dataset.ch);const fl=FLAT.filter(f=>f.c===c);const nd=fl.find(f=>!isDone(f.l))||fl[0];renderLesson(FLAT.indexOf(nd),'learn')}
@@ -1102,8 +1224,9 @@ document.addEventListener('click',e=>{
   else if(t.dataset.mode)mountEx(EXI,t.dataset.mode);
   else if(t.dataset.go)mountEx(EXI,t.dataset.go)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer()});
-window.addEventListener('DOMContentLoaded',()=>{load();initFlat();
+window.addEventListener('DOMContentLoaded',()=>{load();const chosen=P.os;setOS(chosen||detectOS());if(!chosen){delete P.os;save()}
   const fav=document.createElement('link');fav.rel='icon';fav.href=EMBLEM;document.head.appendChild(fav);
+  if(!chosen){renderChooser();return}
   if(P.pos!=null&&FLAT[P.pos])renderLesson(P.pos,'learn');else renderCover()});
 
 /* ===================== content ===================== */
@@ -1118,7 +1241,7 @@ const PP_SLIDE=`<div class="stt">תדריך מחזור 12</div><div class="stx">
 const SENT=[['אל: כל המדריכים','סיכום דיון – תוכנית הכשרות','בטעות צורף הקובץ הלא נכון...'],['אל: רמ"ד הדרכה','בקשה לאישור תקציב','מצורפת הבקשה המעודכנת...'],['אל: מדור כ"א','שיבוץ מדריכים','לבקשתכם, מצורף השיבוץ...']];
 const EMB=`<svg viewBox="0 0 60 60" width="58" height="58"><circle cx="30" cy="30" r="27" fill="#F1F2F3" stroke="#555" stroke-width="2"/><path d="M30 12l12 6v10c0 9-6 15-12 18-6-3-12-9-12-18V18z" fill="#fff" stroke="#555" stroke-width="1.6"/><text x="30" y="35" font-size="8" text-anchor="middle" fill="#555" font-family="sans-serif">סמל</text></svg>`;
 
-const CH=[
+const CH_WIN=[
 /* ======================= 01 כללי מחשב ======================= */
 {id:'pc',no:'01',name:`כללי מחשב`,en:`WINDOWS`,desc:`מקשים חשובים, קיצורי דרך וכלים בסיסיים`,
  col:{a:'#8A6528',a2:'#C9973F',soft:'#F3EADB',paper:'#FBF8F2',tab:'#EFE3CE'},
@@ -1132,8 +1255,8 @@ const CH=[
   pull:`רוב קיצורי הדרך נבנים משלושה מקשים: Ctrl, Alt ו־Windows – יחד עם אות או מקש נוסף.`,
   ex:[{type:'kb',t:`מצאו את המקש`,sub:`לפי מה שהוא עושה – במקלדת שעל המסך או במקלדת שלכם`,items:[
     {k:'Home',p:`המקש שמעביר את הסמן לתחילת השורה`,e:'Home.'},{k:'End',p:`המקש שמעביר את הסמן לסוף השורה`,e:'End.'},{k:'Delete',p:`המקש שמוחק את מה שאחרי הסמן (קדימה)`,e:'Delete.'},
-    {k:'Backspace',p:`המקש שמוחק את מה שלפני הסמן (אחורה)`,e:'Backspace – החץ הגדול מעל Enter.'},{k:'PageDown',p:`המקש שקופץ מסך שלם למטה`,e:'Page Down.'},{k:'PrintScreen',p:`המקש שמצלם את כל המסך`,e:'Print Screen – מצד ימין ל־F12.'},
-    {k:'Escape',p:`המקש שמבטל פקודה`,e:'Esc – בפינה השמאלית העליונה.'},{k:'NumpadSubtract',p:`המינוס של מקלדת המספרים – איתו מקלידים מקף ארוך`,e:'המינוס שבפינה של מקלדת המספרים.',n:'מינוס'},{k:'F4',p:`המקש שחוזר על הפעולה האחרונה באופיס`,e:'F4.'},{k:'CapsLock',p:`המקש שנועל אותיות גדולות באנגלית`,e:'Caps Lock.'}]},
+    {k:'Backspace',p:`המקש שמוחק את מה שלפני הסמן (אחורה)`,e:'Backspace – החץ הגדול מעל Enter.'},{k:'PageDown',p:`המקש שקופץ מסך שלם למטה`,e:'Page Down.'},{k:'PrintScreen',p:`המקש שמצלם את כל המסך`,e:'Print Screen – מצד ימין ל־F12.',note:'ב־Windows 11 המקש פותח את כלי הצילום, ולכן הלחיצה לא תגיע ללומדה – לחצו על המקש שעל המסך.'},
+    {k:'Tab',p:`המקש שמזיח שורה פנימה ועובר לשדה הבא`,e:'Tab – משמאל לאות Q.'},{k:'NumpadSubtract',p:`המינוס של מקלדת המספרים – איתו מקלידים מקף ארוך`,e:'המינוס שבפינה של מקלדת המספרים.',n:'מינוס'},{k:'F4',p:`המקש שחוזר על הפעולה האחרונה באופיס`,e:'F4.'},{k:'CapsLock',p:`המקש שנועל אותיות גדולות באנגלית`,e:'Caps Lock.'}]},
    {type:'mcq',t:`בדיקה מהירה`,q:[
     {q:`כתבתם מילה ורוצים למחוק את האות שלפני הסמן. איזה מקש?`,o:['Backspace','Delete','Esc','End'],kc:1,e:`Backspace מוחק אחורה; Delete מוחק קדימה.`},
     {q:`הסיסמה לא מתקבלת, ואתם בטוחים שהקלדתם נכון. מה כדאי לבדוק קודם?`,o:[`שה־Caps Lock לא דלוק`,`שה־Num Lock כבוי`,`ללחוץ F4 ולנסות שוב`,`ללחוץ Home לפני ההקלדה`],e:`Caps Lock דולק הופך את כל האותיות באנגלית לגדולות – והסיסמה כבר לא אותה סיסמה.`},
@@ -1549,6 +1672,191 @@ const GUESS={
 'ol-1':{4:{q:`"רוקן את התיקייה" – מה נמחק?`,o:[`רק המיילים שבתוכה`,`גם התיקייה עצמה`]}},
 'ol-2':{1:{q:`איפה מוסיפים תאריכים עבריים ללוח?`,o:[`קובץ › אפשרויות › לוח שנה`,`תצוגה › סדר לפי`]}}
 };
+
+/* ===================== Mac adaptation ===================== */
+APPS.cal={n:'לוח שנה',c:'#D9443B',file:'לוח שנה',tab:'cview',tabs:[],ribbon:{},menus:{},dlgs:{}};
+APPS.cal.menus=Object.assign({},COMMON_MENUS);APPS.cal.dlgs=Object.assign({},COMMON_DLGS);
+const MB=(app,extra)=>[{id:'appm',l:app,menu:'mapp',mb:1,app:1},{id:'mfile',l:'קובץ',menu:'mfile',mb:1},{id:'medit',l:'עריכה',menu:'medit',mb:1},...(extra||[]),{id:'mview',l:'תצוגה',menu:'mview',mb:1}];
+const MBMENUS=app=>({mapp:[{id:'ma-about',l:'אודות '+app},{sep:1},{id:'ma-prefs',l:'העדפות...',s:'⌘+,'},{sep:1},{id:'ma-quit',l:'צא מ־'+app,s:'⌘+Q'}],
+  mfile:[{id:'mf-new',l:'חדש',s:'⌘+N'},{id:'mf-open',l:'פתח...',s:'⌘+O'},{id:'mf-save',l:'שמור',s:'⌘+S'}],
+  medit:[{id:'me-undo',l:'בטל',s:'⌘+Z'},{id:'me-copy',l:'העתק',s:'⌘+C'},{id:'me-paste',l:'הדבק',s:'⌘+V'},{sep:1},{id:'me-all',l:'בחר הכל',s:'⌘+A'}],
+  mview:[{id:'mv-1',l:'רגיל'},{id:'mv-2',l:'זום...'}]});
+const noFile=tabs=>tabs.filter(t=>t.id!=='file');
+
+const MAC={
+ map:{'Ctrl+Shift+S':'⌘+Shift+S','Ctrl+Shift+T':'⌘+Shift+T','Ctrl+Alt+-':'Option+-','Ctrl+Enter':'⌘+Return','Alt+Enter':'⌃+⌥+Return',
+  'Ctrl+Home':'⌘+Home','Ctrl+End':'⌘+End','Ctrl+H':'⌃+H','Ctrl+G':'⌥+⌘+G','Alt+Tab':'⌘+Tab',
+  'Win+Shift+S':'⌘+Shift+4','Win+D':'fn+F11','Win+R':'⌘+K','Win+W':'⌘+Shift+3','Win+P':'⌘+F1','Win+V':'⌘+Space',
+  'Print Scrn':'⌘+Shift+3','PrtSc':'⌘+Shift+3','Page Up':'fn+↑','Page Down':'fn+↓','Backspace':'delete','Delete':'fn+delete',
+  'Home':'fn+←','End':'fn+→','F4':'⌘+Y','Esc':'esc','Enter':'Return','Ctrl':'⌘','Alt':'⌥','Win':'⌘'},
+ lmap:{'xl-0':{'Ctrl+Home':'⌃+Home'},'xl-2':{'Ctrl+Home':'⌃+Home'}},
+ ch:{pc:{en:'MAC',desc:'מקשים חשובים, קיצורי דרך וכלים בסיסיים ב־Mac'}},
+ L:{
+ /* ---------- 1.1 keys ---------- */
+ 'pc-0':{h:'שישה־עשר מקשים<br>ש<em>כדאי להכיר</em> ב־Mac.',lead:'במקלדת של Mac חלק מהמקשים נראים אחרת – ויש מקשים שאין בכלל. אלה המקשים מהסדנה, והמקבילים שלהם ב־Mac.',
+  pull:'רוב הקיצורים ב־Mac נבנים עם ⌘ command – במקום Ctrl ב־Windows.',
+  keyc:[{k:'-',d:'המינוס. יחד עם <b>Option</b> הוא מקליד מקף ארוך (–).',codes:'Minus AltLeft'},{k:'fn+↑',d:'גלילה של מסך שלם כלפי מעלה (Page Up). במקלדת מלאה יש מקש page up.',codes:'Fn ArrowUp PageUp'},
+   {k:'fn+↓',d:'גלילה של מסך שלם כלפי מטה (Page Down).',codes:'Fn ArrowDown PageDown'},{k:'fn+←',d:'הסמן קופץ להתחלה (Home).',codes:'Fn ArrowLeft Home'},
+   {k:'fn+→',d:'הסמן קופץ לסוף (End).',codes:'Fn ArrowRight End'},{k:'fn+delete',d:'מחיקה <b>קדימה</b> – מה שאחרי הסמן. במקלדת מלאה: מקש ⌦.',codes:'Fn Backspace Delete'},
+   {k:'⌘+Shift+3',d:'צילום של כל המסך – נשמר כקובץ בשולחן העבודה. עם ⌃ control – הצילום נשמר בלוח, ומדביקים עם ⌘+V.',codes:'MetaLeft ShiftLeft Digit3'},
+   {k:'delete',d:'מחיקה <b>אחורה</b> – מה שלפני הסמן. שימו לב: ב־Mac המקש שנקרא delete מוחק אחורה.',codes:'Backspace'},
+   {k:'⌘+Y',d:'באופיס – חוזר על הפעולה האחרונה (כמו F4 ב־Windows).',codes:'MetaLeft KeyY'},{k:'esc',d:'ביטול פקודה, סגירת תפריט ויציאה ממסך מלא או מהצגת שקופיות.',codes:'Escape'},
+   {k:'Tab',d:'הזחה פנימה של שורה, ומעבר לשדה או לתא הבא.',codes:'Tab'},{k:'Caps Lock',d:'נועל אותיות גדולות באנגלית. דלק בטעות? הסיסמה לא תתקבל.',codes:'CapsLock'},
+   {k:'Shift',d:'לחוץ יחד עם מקש – אות גדולה או הסימן העליון. עם החצים – סימון.',codes:'ShiftLeft ShiftRight'},
+   {k:'⌘',d:'command – הבסיס של רוב הקיצורים ב־Mac: ⌘+C, ⌘+V, ⌘+S – במקום Ctrl.',codes:'MetaLeft MetaRight'},
+   {k:'⌃',d:'control – משמש ללחיצה ימנית (control + לחיצה) ולהחלפת שפה (control + רווח).',codes:'ControlLeft ControlRight'},
+   {k:'⌥',d:'option – מחליף את Alt: מקליד סימנים מיוחדים (כמו המקף הארוך) ומשנה פעולות של קיצורים.',codes:'AltLeft AltRight'}],
+  ex:{0:{items:[
+    {k:'Home',p:'המקש שמעביר את הסמן להתחלה (במקלדת מלאה)',e:'home – מעל ⌦.'},{k:'End',p:'המקש שמעביר את הסמן לסוף (במקלדת מלאה)',e:'end.'},
+    {k:'Delete',p:'המקש שמוחק קדימה – מה שאחרי הסמן (במקלדת מלאה)',e:'⌦ – מתחת ל־fn.',n:'⌦'},{k:'Backspace',p:'המקש שמוחק אחורה – מה שלפני הסמן',e:'delete – מעל return.',n:'delete'},
+    {k:'PageDown',p:'המקש שקופץ מסך שלם למטה (במקלדת מלאה)',e:'page down.'},{k:'MetaLeft',p:'המקש שמחליף את Ctrl ברוב הקיצורים ב־Mac',e:'⌘ command – משני צדי מקש הרווח.',n:'command'},
+    {k:'Tab',p:'המקש שמזיח שורה פנימה ועובר לשדה הבא',e:'tab – משמאל לאות Q.'},{k:'Minus',p:'המקש שיחד עם Option מקליד מקף ארוך (–)',e:'המינוס – מימין ל־0.',n:'מינוס'},
+    {k:'AltLeft',p:'המקש שמחליף את Alt ב־Mac',e:'⌥ option – ליד ⌘.',n:'option'},{k:'CapsLock',p:'המקש שנועל אותיות גדולות באנגלית',e:'caps lock.'}],
+    note:'המקלדת על המסך היא מקלדת Mac מלאה. במחשב נייד אין חלק מהמקשים (home, end, page down) – לוחצים עליהם על המסך.'},
+   1:{q:[{q:'כתבתם מילה ורוצים למחוק את האות שלפני הסמן. איזה מקש?',o:['delete','fn+delete','esc','fn+→'],kc:1,e:'ב־Mac המקש delete מוחק אחורה; fn+delete מוחק קדימה.'},
+    {q:'הסיסמה לא מתקבלת, ואתם בטוחים שהקלדתם נכון. מה כדאי לבדוק קודם?',o:['שה־Caps Lock לא דלוק','שה־fn לחוץ','ללחוץ ⌘+Y ולנסות שוב','ללחוץ esc לפני ההקלדה'],e:'Caps Lock דולק הופך את כל האותיות באנגלית לגדולות.'},
+    {q:'רוצים מקף ארוך (–) בין שתי מילים. מה לוחצים?',o:['Option+-','Shift+-','⌘+Tab','⌘+Shift+T'],kc:1,e:'Option יחד עם מקש המינוס.'}]}}},
+ /* ---------- 1.2 shortcuts ---------- */
+ 'pc-1':{h:'שמונה צירופים.<br><em>הרבה</em> זמן.',lead:'קיצורי המקשים של macOS עובדים בכל מקום במחשב – לא משנה באיזו תוכנה אתם נמצאים.',
+  cards:[{t:'הצגת שולחן העבודה',keys:['fn+F11'],d:'מזיז את כל החלונות הצידה ומציג את שולחן העבודה. לחיצה נוספת מחזירה אותם.'},{t:'שחזור דפי אינטרנט שנסגרו',keys:['⌘+Shift+T'],d:'בדפדפן – פותח מחדש את הלשוניות שנסגרו, לפי הסדר.'},
+   {t:'מעבר בין אפליקציות',keys:['⌘+Tab'],d:'ממשיכים ללחוץ על Tab כש־⌘ לחוץ, ועוברים בין האפליקציות הפתוחות.'},{t:'צילום מסך ידני',keys:['⌘+Shift+4'],d:'מסמנים בעכבר את האזור שרוצים לצלם. הצילום נשמר כקובץ בשולחן העבודה. עם ⌃ control לחוץ – הוא נשמר בלוח, ומדביקים עם ⌘+V.'},
+   {t:'צילום של כל המסך',keys:['⌘+Shift+3'],d:'צילום של כל המסך – בלי לסמן אזור.'},{t:'פתיחת נתיב רשת',keys:['⌘+K'],d:'ב־Finder: נפתח החלון "התחבר לשרת". מקלידים את כתובת התיקייה ברשת ומתחברים.'},
+   {t:'הקרנת התצוגה – מקרן ומחשב',path:'הגדרות המערכת › מסכים',d:'בוחרים אם לשכפל את המסך או להרחיב אותו. כששני מסכים מחוברים, ⌘ יחד עם מקש הקטנת הבהירות מפעיל ומכבה שכפול.'},
+   {t:'היסטוריית העתקות',keys:['⌘+Space','⌘+4'],d:'ב־macOS 26 ומעלה: פותחים את Spotlight (⌘+Space) ועוברים ללוח עם ⌘+4 – שם מופיע כל מה שהעתקתם לאחרונה. אם הלשונית לא מופיעה: הגדרות המערכת › Spotlight › לוח. בגרסאות קודמות אין היסטוריית העתקות מובנית.'}],
+  ex:{0:{q:[{q:'המפקד נכנס לחדר ואתם רוצים להסתיר מיד את כל החלונות',o:['fn+F11','⌘+Tab','⌘+K','⌘+W'],e:'fn+F11 מציג את שולחן העבודה. עוד לחיצה – והחלונות חוזרים.'},
+    {q:'סגרתם בטעות את הלשונית עם הטופס החשוב',o:['⌘+Shift+T','⌘+Z','⌘+K','⌘+T'],e:'⌘+Shift+T פותח מחדש את הלשונית האחרונה שנסגרה.'},
+    {q:'צריך לצלם רק את הטבלה שעל המסך',o:['⌘+Shift+4','⌘+Shift+3','⌘+Tab','⌘+V'],e:'⌘+Shift+4 – מסמנים רק את האזור הרצוי.'},
+    {q:'רוצים לקפוץ במהירות מהאקסל לוורד הפתוח',o:['⌘+Tab','fn+F11','⌃+Tab','Shift+Tab'],e:'⌘+Tab עובר בין האפליקציות הפתוחות.'},
+    {q:'רוצים לפתוח תיקייה ברשת לפי הכתובת שלה',o:['⌘+K','⌘+O','⌘+Space','⌘+F1'],e:'ב־Finder, ⌘+K פותח את "התחבר לשרת".'}]},
+   1:{pairs:[['⌘+K','פתיחת נתיב רשת'],['⌘+Shift+3','צילום של כל המסך'],['fn+F11','הצגת שולחן העבודה'],['⌘+Shift+4','צילום של אזור במסך'],['⌘+Tab','מעבר בין אפליקציות']]}}},
+ /* ---------- 1.3 tools ---------- */
+ 'pc-2':{lead:'שמונה כלים שכל מי שעובד מול Mac צריך להכיר – מהחלפת שפה ועד שחזור של קובץ שנמחק.',
+  cards:[{t:'שינוי שפה במחשב',keys:['⌃+Space'],d:'מחליף את שפת ההקלדה. אפשר גם במקש 🌐 במקלדת, או בתפריט השפות בשורת התפריטים למעלה.'},
+   {t:'שחזור קבצים ותיקיות',d:'ב־Mac אין "גרסאות קודמות" כמו ב־Windows. אם המחשב מגובה ב־Time Machine: פותחים ב־Finder את התיקייה, לוחצים על סמל Time Machine בשורת התפריטים › "עיין בגיבויי Time Machine", בוחרים תאריך, מסמנים את הקובץ ולוחצים "שחזר". קובץ בתיקייה משותפת ברשת – פונים לתקשוב.'},
+   {t:'נעיצת אפליקציות ב־Dock',path:'מקש ימני על האפליקציה ב־Dock › אפשרויות › השאר ב־Dock',d:'האפליקציות שאתם פותחים כל יום – תמיד בלחיצה אחת.'},
+   {t:'קבצים קבועים ב־Dock',d:'גוררים קובץ או תיקייה לחלק של ה־Dock שליד סל האשפה – והם יישארו שם, זמינים בלחיצה אחת.'},
+   {t:'כלי הצילום',keys:['⌘+Shift+5'],d:'פותח את כלי הצילום של macOS: צילום של כל המסך, של חלון או של אזור, וגם הקלטת מסך.'},
+   {t:'צילום מסך מלא',keys:['⌘+Shift+3'],d:'אין מקש Print Screen ב־Mac. הצילום נשמר כקובץ בשולחן העבודה. כדי שיישמר בלוח – מוסיפים ⌃ control, ומדביקים עם ⌘+V.'},
+   {t:'מועדפים באינטרנט',keys:['⌘+D'],d:'כשהאתר פתוח לוחצים על סמל הכוכב (או ⌘+D), והאתר נשמר במועדפים. כדי להגיע אליו: שלוש הנקודות בצד › סימניות, או "הצגת סרגל הסימניות".'},
+   {t:'שינוי כינוי ושם במחשב (האיש הירוק)',d:'האפליקציה "עדכון פרטים אישיים" שייכת למחשבי Windows ברשת הארגונית. אם היא לא מופיעה ב־Mac – פונים לתקשוב היחידתי לעדכון הפרטים.'}],
+  ex:{0:{type:'order',t:'שחזור קובץ עם Time Machine',sub:'סדרו את השלבים לשחזור קובץ שנמחק מהמחשב',steps:['פותחים ב־Finder את התיקייה שבה היה הקובץ','לוחצים על סמל Time Machine בשורת התפריטים','בוחרים "עיין בגיבויי Time Machine"','בוחרים בציר הזמן תאריך שבו הקובץ עוד היה','מסמנים את הקובץ ולוחצים "שחזר"'],extra:['מקש ימני › מאפיינים › גרסאות קודמות']},
+   1:{type:'order',t:'קובץ קבוע ב־Dock',sub:'סדרו את השלבים',steps:['פותחים ב־Finder את התיקייה של הקובץ','גוררים את הקובץ אל ה־Dock – לחלק שליד סל האשפה','משחררים – והקובץ נשאר ב־Dock'],extra:['מקש ימני › מאפיינים']},
+   2:{q:[{q:'צילמתם את המסך עם ⌘+Shift+3. איפה הצילום?',o:['קובץ בשולחן העבודה','בלוח – מדביקים עם ⌘+V','בתיקיית "מסמכים"','בתיבת המייל'],e:'ב־Mac הצילום נשמר כקובץ בשולחן העבודה. כדי שיישמר בלוח – מוסיפים ⌃ control לצירוף.'},
+    {q:'רוצים להחליף את שפת ההקלדה מעברית לאנגלית',o:['⌃+Space','⌘+Tab','⌘+Shift+3','fn+F11'],kc:1,e:'control + רווח – או מקש 🌐.'}]}}},
+ 'pc-3':{ex:{0:{q:[
+   {q:'מחקתם בטעות קובץ מהמחשב, והמחשב מגובה ב־Time Machine. מה עושים?',o:['פותחים את התיקייה › Time Machine › בוחרים תאריך › שחזר','⌘+Z על שולחן העבודה','מחפשים במחשב אחר','אין דרך לשחזר'],e:'ב־Time Machine בוחרים את הזמן האחרון שבו הקובץ היה, ומשחזרים.'},
+   {q:'רוצים להציג את המחשב על המקרן בחדר הדיונים',o:['הגדרות המערכת › מסכים','fn+F11','⌘+Tab','⌘+K'],e:'בהגדרות המסכים בוחרים שכפול או הרחבה.'},
+   {q:'סגרתם בטעות לשונית בדפדפן',o:['⌘+Shift+T','⌘+Z','⌘+T','⌘+Q'],kc:1,e:'⌘+Shift+T משחזר את הלשונית שנסגרה.'},
+   {q:'איך רואים את היסטוריית ההעתקות ב־macOS 26?',o:['⌘+Space ואז ⌘+4','⌘+V פעמיים','⌘+Shift+V','אי אפשר'],e:'פותחים את Spotlight ועוברים ללוח.'},
+   {q:'איזה מקש ב־Mac מוחק את מה שלפני הסמן?',o:['delete','fn+delete','esc','fn+→'],kc:1,e:'delete – מחיקה אחורה. fn+delete – קדימה.'}]}}},
+ /* ---------- 2 Office ---------- */
+ 'off-1':{lead:'הקיצורים האלה עובדים כמעט בכל תוכנות האופיס ל־Mac. ברוב המקרים פשוט מחליפים את Ctrl ב־⌘. אפשר לחפש קיצור לפי שם או פעולה.',
+  cards:[{rows:[['עיצוב טקסט',[['⌘+B','עיצוב מודגש'],['⌘+U','קו תחתון'],['⌘+I','עיצוב נטוי'],['⌘+]','הגדלת הטקסט'],['⌘+[','הקטנת הטקסט'],['Option+-','מקף ארוך במקום מקף קצר']]],
+    ['יישור ורווח',[['⌘+R','יישור לימין'],['⌘+L','יישור לשמאל'],['⌘+E','יישור למרכז'],['⌘+J','יישור לשני הצדדים'],['⌘+1','רווח שורה אחת'],['⌘+5','רווח שורה וחצי'],['⌘+2','רווח כפול']]],
+    ['עריכה',[['⌘+X','גזירה'],['⌘+C','העתקה'],['⌘+V','הדבקה'],['⌘+Z','ביטול הפעולה האחרונה'],['⌘+Y','ביצוע חוזר / חזרה על הפעולה האחרונה'],['⌘+A','סימון כל התוכן בקובץ'],['⌘+D','שכפול'],['⌘+F','חיפוש'],['⌃+H','החלפה (Word)'],['fn+delete','מחיקה קדימה'],['delete','מחיקה אחורה'],['esc','ביטול פקודה']]],
+    ['קבצים',[['⌘+N','פתיחת קובץ חדש ריק'],['⌘+O','פתיחת קובץ'],['⌘+S','שמירה'],['⌘+Shift+S','שמירה בשם'],['⌘+P','הדפסה'],['⌘+W','סגירת המסמך']]],
+    ['ניווט',[['fn+←','הסמן עובר לתחילת השורה'],['fn+→','הסמן עובר לסוף השורה'],['⌘+fn+←','מעבר לתחילת המסמך'],['⌘+fn+→','מעבר לסוף המסמך'],['fn+↑','מסך אחד למעלה'],['fn+↓','מסך אחד למטה'],['Tab','הזחת השורה פנימה'],['Shift+Tab','הזחת השורה החוצה']]]]}],
+  ex:{1:{q:[{q:'פתיחת קובץ חדש וריק',o:['⌘+N','⌘+O','⌘+W','⌘+D'],e:'N = New.'},{q:'רווח שורה וחצי',o:['⌘+5','⌘+2','⌘+1','⌘+E'],e:'⌘+1 שורה אחת, ⌘+5 שורה וחצי, ⌘+2 כפול.'},
+    {q:'מעבר לסוף המסמך',o:['⌘+fn+→','fn+→','fn+↓','⌘+Tab'],e:'fn+→ – סוף השורה. עם ⌘ – סוף המסמך.'},{q:'החלפת מילה בכל המסמך ב־Word',o:['⌃+H','⌘+F','⌘+R','⌘+Y'],e:'ב־Word ל־Mac: ⌘+F מחפש, ⌃+H מחליף.'},
+    {q:'שמירת עותק בשם חדש',o:['⌘+Shift+S','⌘+S','⌘+Option+S','Shift+S'],e:'⌘+S שומר את הקובץ הקיים; עם Shift – שמירה בשם.'},{q:'סגירת המסמך – בלי לסגור את התוכנה',o:['⌘+W','⌘+Tab','esc','⌘+Q'],e:'⌘+W סוגר את הקובץ; ⌘+Q סוגר את כל התוכנה.'}]}}},
+ 'off-2':{cards:{0:{path:null,d:'ב־Mac שפת התוכנות נקבעת בהגדרות המערכת: הגדרות המערכת › כללי › שפה ואזור. אחרי השינוי סוגרים את התוכנה ופותחים מחדש.'},
+   1:{d:'סוג גופן, גודל, צבע ועוד – שייפתחו כך בכל פעם. ב־Word ל־Mac: תפריט עיצוב › גופן › בוחרים בדיוק מה רוצים › "ברירת מחדל" › "כל המסמכים".'},
+   2:{t:'שליחת הקובץ כ־PDF',path:'קובץ › שמירה בשם › תבנית: PDF',d:'שומרים עותק PDF – ומצרפים אותו למייל.'},
+   3:{path:'סקירה › הגן על מסמך',d:'מקלידים סיסמה לפתיחת המסמך ומאשרים. <b>שימו לב!</b> אם שוכחים את הסיסמה – אין דרך לשחזר.'},
+   4:{d:'שמים את הסמן במקום שבו ההערה צריכה להופיע › control + לחיצה (או מקש ימני) › הערה חדשה.'}},
+  ex:{0:{type:'sim',app:'wd',t:'הגנה בסיסמה',sub:'נעלו את סיכום הדיון בסיסמה',body:()=>wdBody(WD_TEXT),tabs:noFile(APPS.wd.tabs),
+    ribbon:{rev:[{l:'הגהה',b:[{id:'r-spell',l:'איות ודקדוק',ic:'doc'}]},{l:'הערות',b:[{id:'r-cmt',l:'הערה חדשה',ic:'comment'}]},{l:'הגנה',b:[{id:'r-prot',l:'הגן על מסמך',ic:'lock',dlg:'pwdm'}]}]},
+    dlgs:{pwdm:{title:'הגנת סיסמה',rows:[{l:'הגדרת סיסמה לפתיחת המסמך',kind:'title'},{id:'pwm1',l:'סיסמה לפתיחה:',kind:'field',v:'••••••••'},{l:'סיסמה לשינוי המסמך (לא חובה)',kind:'title'},{id:'pwm2',l:'סיסמה לשינוי:',kind:'field',v:'••••••••'}],btns:[{id:'pwm-ok',l:'אישור',close:true,pr:true},{id:'pwm-cancel',l:'ביטול',close:true}]}},
+    steps:[{t:'tab:rev',h:'עברו ללשונית "סקירה".'},{t:'r-prot',h:'לחצו על "הגן על מסמך".'},{t:'pwm1',h:'לחצו על השדה "סיסמה לפתיחה" כדי להקליד סיסמה.'},{t:'pwm-ok',h:'לחצו "אישור" – ואז מקלידים את הסיסמה פעם נוספת לאימות.'}],
+    done:a=>{a.lock();a.toast('המסמך מוגן בסיסמה')},ok:'זכרו: סיסמה שנשכחה – אי אפשר לשחזר.'},
+   1:{q:[{q:'רוצים להעתיק את העיצוב של כותרת אחת לחמש כותרות אחרות. כמה פעמים לוחצים על מברשת העיצוב?',o:['פעמיים – ואז היא מעתיקה בלי הגבלה','פעם אחת','חמש פעמים','אי אפשר להעתיק ליותר מכותרת אחת'],e:'לחיצה כפולה משאירה את המברשת פעילה. מסיימים עם esc.'},
+    {q:'רוצים שהאופיס יופיע בשפה אחרת. איפה משנים?',o:['הגדרות המערכת › כללי › שפה ואזור','בתוך Word › תצוגה','בתפריט קובץ','אי אפשר'],e:'ב־Mac שפת התוכנות נקבעת בהגדרות המערכת.'},
+    {q:'רוצים לשלוח מסמך כ־PDF. מה עושים?',o:['קובץ › שמירה בשם › PDF, ואז מצרפים למייל','הוספה › קובץ מצורף','תצוגה › PDF','⌘+P פעמיים'],e:'שומרים עותק בתבנית PDF ומצרפים אותו.'}]}}},
+ 'off-3':{cards:{1:{d:'⌘+P › מסמנים "דו־צדדי": דף לאורך – כריכה בצד הארוך, דף לרוחב – כריכה בצד הקצר. באקסל: מסמנים קטע ובהדפסה בוחרים "בחירה".'},
+   4:{d:'מחליף מילה או משפט לאורך כל הקובץ – אחד אחד, או הכול בבת אחת. ב־Word ל־Mac הקיצור הוא ⌃+H.'},
+   5:{path:'Word › העדפות › שמירה',d:'קובעים כל כמה דקות יישמר מידע לשחזור – גם אם המחשב נכבה פתאום. <b>באקסל ל־Mac</b> אי אפשר לקבוע את התדירות: אקסל קובע אותה לבד, ואפשר רק להפעיל או לכבות.'}},
+  ex:{0:{type:'sim',app:'wd',t:'שמירה אוטומטית כל דקה',sub:'הגדירו ש־Word ישמור מידע לשחזור בכל דקה',body:()=>wdBody(WD_TEXT),tabs:[...MB('Word'),...noFile(APPS.wd.tabs)],
+    menus:Object.assign(MBMENUS('Word'),{mapp:[{id:'ma-about',l:'אודות Word'},{sep:1},{id:'ma-prefs',l:'העדפות...',s:'⌘+,',dlg:'mprefs'},{sep:1},{id:'ma-quit',l:'צא מ־Word',s:'⌘+Q'}]}),
+    dlgs:{mprefs:{title:'העדפות Word',side:[{id:'mp-gen',l:'כללי'},{id:'mp-view',l:'תצוגה'},{id:'mp-edit',l:'עריכה'},{id:'mp-save',l:'שמירה'},{id:'mp-spell',l:'איות ודקדוק'}],
+     panes:{'mp-gen':[{l:'הגדרות כלליות של Word.',kind:'info'}],'mp-save':[{l:'אפשרויות שמירה',kind:'title'},{id:'mas-check',l:'שמור מידע לשחזור אוטומטי כל',kind:'check'},{id:'mas-1',l:'1 דקות',kind:'radio',g:'mas'},{id:'mas-10',l:'10 דקות',kind:'radio',g:'mas',on:true}]},
+     btns:[{id:'mp-ok',l:'אישור',close:true,pr:true}]}},
+    steps:[{t:'tab:appm',h:'בשורת התפריטים העליונה, לחצו על "Word".'},{t:'ma-prefs',h:'בחרו "העדפות...".'},{t:'mp-save',h:'בחרו "שמירה".'},{t:'mas-check',h:'סמנו וי ב"שמור מידע לשחזור אוטומטי כל".'},{t:'mas-1',h:'בחרו "1 דקות".'},{t:'mp-ok',h:'לחצו "אישור".'}],
+    done:a=>a.toast('מעכשיו – שמירה אוטומטית בכל דקה'),ok:'באקסל ל־Mac אי אפשר לקבוע את התדירות – רק להפעיל או לכבות.'},
+   1:{q:[{q:'מסמך לאורך צריך להיות מודפס דו־צדדי. איך בוחרים?',o:['דו־צדדי – כריכה בצד הארוך','דו־צדדי – כריכה בצד הקצר','2 עמודים לגיליון','הדפסת בחירה'],e:'לאורך – צד ארוך. לרוחב – צד קצר.'},
+    {q:'באקסל רוצים להדפיס רק את הטבלה הקטנה שבראש הגיליון',o:['מסמנים אותה › ⌘+P › "בחירה"','מדפיסים הכול וגוזרים','מעתיקים לוורד ומדפיסים','⌘+P › כל חוברת העבודה'],e:'בוחרים להדפיס רק את מה שסומן.'}]}}},
+ /* ---------- 4 Word ---------- */
+ 'wd-0':{fn:l=>{l.ex[1].tasks[1].cm='Meta+Alt+KeyG';l.ex[1].tasks[1].p='פתחו את "מעבר אל" כדי לקפוץ לעמוד מסוים'}},
+ /* ---------- 5 Excel ---------- */
+ 'xl-0':{fn:l=>{l.ex[1].tasks[0].cm='Ctrl+Alt+Enter';l.ex[1].tasks[1].cm='Ctrl+Home';l.ex[1].tasks[1].key='Home';l.ex[1].note='ב־Mac: ⌃ control + ⌥ option + return – שורה חדשה בתא. במחשב נייד, Home = fn+←.'}},
+ /* ---------- 6 PowerPoint ---------- */
+ 'pp-0':{cards:{4:{path:'עיצוב (בשורת התפריטים) › החלפת גופנים',d:'בוחרים את הגופן הקיים ואת הגופן החדש. אם יש כמה גופנים – מחליפים כל אחד בנפרד.'}},
+  ex:{0:{type:'sim',app:'pp',t:'החלפת גופן בכל המצגת',sub:'המצגת כתובה ב־Arial. החליפו ל־David – בבת אחת',body:()=>ppBody(4,PP_SLIDE,{titles:['תדריך מחזור 12','מטרות','לו"ז','בטיחות']}),
+    tabs:[...MB('PowerPoint',[{id:'mfmt',l:'עיצוב',menu:'mfmt',mb:1}]),...noFile(APPS.pp.tabs)],menus:Object.assign(MBMENUS('PowerPoint'),{mfmt:[{id:'mfm-font',l:'גופן...'},{id:'mfm-par',l:'פסקה...'},{sep:1},{id:'r-fonts',l:'החלפת גופנים...',dlg:'fonts'}]}),
+    steps:[{t:'tab:mfmt',h:'בשורת התפריטים העליונה, לחצו על "עיצוב".'},{t:'r-fonts',h:'בחרו "החלפת גופנים...".'},{t:'fn-from',h:'בחרו את הגופן הקיים – Arial.'},{t:'fn-to',h:'בחרו את הגופן החדש – David.'},{t:'fn-ok',h:'לחצו "החלף".'}],
+    done:a=>{a.q('.pp-slide')[0].classList.add('david');a.toast('הגופן הוחלף בכל השקופיות')},ok:'אם במצגת יש כמה גופנים – חוזרים על זה לכל גופן בנפרד.'}}},
+ 'pp-1':{lead:'שקופית נראית מקצועית כשהאובייקטים מיושרים ומרווחים באופן שווה. ב־Mac שלושה מקשים עושים את ההבדל: Shift, Option ו־⌘.',
+  cards:{0:{d:'שתי דרכים: 1) לחיצה על אובייקט אחד, ואז Shift (או ⌘) לחוץ ולחיצה על השאר. 2) גרירה של מלבן סביב כל האובייקטים. וכדי לסמן הכול: ⌘+A.'},
+   5:{keys:['⌘+D'],d:'מסמנים את האובייקט ולוחצים ⌘+D – או גוררים אותו כש־Option (⌥) לחוץ. נוצר עותק זהה.'},
+   6:{d:'גוררים את האובייקט כש־<b>Option+Shift</b> לחוצים – העותק נשאר בדיוק באותו קו, אופקי או אנכי.'},
+   8:{d:'גוררים כש־<b>⌘</b> לחוץ – האובייקט זז בחופשיות, בלי להיצמד לקווי העזר. להזזה עדינה: החיצים במקלדת.'},
+   9:{path:'control + לחיצה › עיצוב צורה › אפשרויות טקסט › תיבת טקסט'}},
+  ex:{0:{type:'sim',app:'pp',t:'יישור שלושה אובייקטים',sub:'שלושת השלבים "קופצים". ישרו אותם לאותה שורה',body:()=>ppBody(3,`<div class="shp" style="right:8%;top:14%;background:#E07A55">שלב 1</div><div class="shp" style="right:40%;top:56%;background:#D2643C">שלב 2</div><div class="shp" style="right:72%;top:30%;background:#B4502E">שלב 3</div>`,{titles:['תהליך העבודה','','']}),
+    tabs:[...MB('PowerPoint'),...noFile(APPS.pp.tabs)],menus:MBMENUS('PowerPoint'),
+    steps:[{t:'tab:medit',h:'בשורת התפריטים העליונה, לחצו על "עריכה".'},{t:'me-all',h:'בחרו "בחר הכל" (או ⌘+A) – שלושת האובייקטים יסומנו.'},{t:'arrange',h:'בלשונית "בית" לחצו על "סדר".'},{t:'a-align',h:'בחרו "ישר".'},{t:'al-m',h:'בחרו "ישר לאמצע" – כדי שכולם יעמדו באותה שורה.'}],
+    on:{'me-all':a=>a.q('.shp').forEach(s=>s.classList.add('sel'))},done:a=>{a.q('.shp').forEach(s=>s.style.top='38%');a.toast('שלושת האובייקטים באותה שורה')},ok:'לטור – "ישר למרכז". לריווח שווה – "פזר אופקית" או "פזר אנכית".'},
+   1:{pairs:[['Shift+גרירת פינה','שינוי גודל ששומר על היחס'],['Option+גרירה','העתקת האובייקט'],['Option+Shift+גרירה','העתקה באותו קו'],['⌘+גרירה','תזוזה בלי היצמדות לקווי עזר'],['⌘+D','שכפול מיידי']]}}},
+ 'pp-2':{cards:{5:{t:'הגדלת התצוגה',keys:null,d:'ב־Mac: מחוון הזום בתחתית החלון, או תנועת צביטה במשטח המגע.'},4:{d:'<b>⌘</b> לחוץ – בוחרים שקופיות בודדות. <b>Shift</b> לחוץ – לחיצה על הראשונה ועל האחרונה מסמנת את כל מה שביניהן.'}}},
+ 'pp-3':{fn:l=>{l.ex[0].q[1].o=['גוררים פינה כש־Shift לחוץ','גוררים צד כש־Option לחוץ','⌘+D','control + לחיצה › קבץ']}},
+ /* ---------- 7 Outlook ---------- */
+ 'ol-0':{cards:{0:{path:'פריטים שנשלחו › לחיצה כפולה על המייל › אחזור',d:'אפשר גם control + לחיצה על המייל › "אחזור". <b>שימו לב:</b> אם הנמען כבר פתח את המייל – לא ניתן לאחזר. תקבלו דוח אחזור במייל. (Outlook ל־Mac בגרסה 16.94 ומעלה.)'},
+   1:{path:null,d:'פותחים את "פריטים שנמחקו" וגוררים את המייל חזרה לתיקייה הרצויה.'},
+   2:{path:'כלים › תשובות אוטומטיות',d:'מפעילים "שלח תשובות אוטומטיות", מגדירים זמן וכותבים את התשובה. גם כשההודעה פעילה – כל המיילים ממשיכים להגיע.'},
+   3:{path:'Outlook › הגדרות › חתימות › +',d:'כדאי לעצב את החתימה בפאוורפוינט ולהדביק אותה כתמונה.'},
+   4:{path:null,d:'בהגדרות של Outlook (Outlook › הגדרות) בוחרים את הגופן והגודל לכתיבת מיילים – וכל מייל ייכתב כך.'},
+   7:{d:'1) בודקים שיש חיבור לרשת. 2) בודקים את הסטטוס בתחתית החלון. 3) סוגרים את Outlook ופותחים מחדש. אם זה לא עוזר – פונים לתקשוב.'}},
+  ex:{0:{type:'sim',app:'ol',t:'אחזור מייל',sub:'שלחתם לכל המדריכים את הקובץ הלא נכון. אחזרו את המייל',body:()=>olBody({t:{sent:'sent'}}),tabs:noFile(APPS.ol.tabs),
+    dlgs:{rcm:{title:'אחזור הודעה',rows:[{l:'Outlook ינסה למחוק את ההודעה מתיבות הדואר של הנמענים שעוד לא פתחו אותה.',kind:'info'}],btns:[{id:'rcm-ok',l:'אישור',close:true,pr:true},{id:'rcm-cancel',l:'ביטול',close:true}]}},
+    steps:[{t:'sent',h:'פתחו את התיקייה "פריטים שנשלחו".'},{t:'m1',h:'פתחו את המייל שנשלח בטעות (במחשב – בלחיצה כפולה).'},{t:'mrec',h:'בסרגל של ההודעה, לחצו על "אחזור".'},{t:'rcm-ok',h:'לחצו "אישור".'}],
+    on:{sent:a=>{a.q('.ofd').forEach(e=>e.classList.toggle('on',e.dataset.f==='sent'));a.q('.lh')[0].textContent='פריטים שנשלחו';a.q('.oll')[0].innerHTML=mailList(SENT,{sel:1,t:{0:'m1'}});a.q('.ol-read')[0].innerHTML=`<h5>${SENT[0][1]}</h5><div class="meta">${SENT[0][0]}</div><p>${SENT[0][2]}</p>`},
+     m1:a=>a.body.insertAdjacentHTML('beforeend',`<div class="ol-msg"><div class="mbar"><span>↩ השב</span><span>↪ העבר</span><span class="more" data-t="mrec" data-dlg="rcm">↶ אחזור</span></div><div class="mb"><b>סיכום דיון – תוכנית הכשרות</b><br><span style="color:#7a8580">אל: כל המדריכים</span><br><br>שלום לכולם,<br>מצורף סיכום הדיון מיום ראשון.<br><span style="color:#B9472F">📎 סיכום_ישן_לא_לשימוש.docx</span></div></div>`)},
+    done:a=>{a.q('.ol-msg')[0]?.remove();a.toast('בקשת האחזור נשלחה – דוח אחזור יגיע לתיבת הדואר')},ok:'אם הנמען כבר פתח את המייל – האחזור לא יצליח.'},
+   2:{q:[{q:'המיילים לא נשלחים. מה בודקים קודם?',o:['שיש חיבור לרשת ואת הסטטוס בתחתית החלון','מוחקים את תיבת הדואר','שולחים שוב ושוב','מחליפים סיסמה'],e:'אם זה לא עוזר – סוגרים ופותחים מחדש, ופונים לתקשוב.'},
+    {q:'אתם בשרשור מיילים על אישור תקציב. מה עושים עם הנושא?',o:['לא משנים אותו – כדי שיהיה אפשר למצוא את השרשור','משנים אותו בכל תגובה','מוחקים אותו','כותבים "דחוף"'],e:'הנושא הוא הדרך למצוא אישורים, דרישות והנחיות בהמשך.'}]}}},
+ 'ol-1':{cards:{5:{d:'1) מוחקים מ"פריטים שנמחקו". 2) ממיינים לפי גודל ומוחקים מיילים גדולים. 3) ממיינים מהישן לחדש ומוחקים ישנים. 4) מייצאים דואר ישן לקובץ ארכיון – בעזרת התקשוב היחידתי.'}}},
+ 'ol-2':{lead:'לוחות משותפים, הרשאות וזימונים – ואיך מציגים תאריכים עבריים ומספרי שבועות במחשב Mac.',
+  cards:{1:{path:'לוח שנה › הגדרות › כללי › הצג לוח שנה חלופי › עברי',d:'ב־Mac מציגים את התאריכים העבריים באפליקציית "לוח שנה" של המערכת.'},
+   2:{path:'לוח שנה › הגדרות › מתקדם › הצג מספרי שבועות',d:'גם זה באפליקציית "לוח שנה" של Mac.'}},
+  ex:{0:{type:'sim',app:'cal',t:'תאריכים עבריים',sub:'הציגו תאריכים עבריים באפליקציית לוח השנה של Mac',file:'החודש',body:()=>calBody(),
+    tabs:[...MB('לוח שנה'),{id:'cview',l:'חודש'}],ribbon:{cview:[{l:'תצוגה',b:[{id:'cv-day',l:'יום',ic:'cal'},{id:'cv-week',l:'שבוע',ic:'cal'},{id:'cv-month',l:'חודש',ic:'cal'}]}]},
+    menus:Object.assign(MBMENUS('לוח שנה'),{mapp:[{id:'ma-about',l:'אודות לוח שנה'},{sep:1},{id:'mc-set',l:'הגדרות...',s:'⌘+,',dlg:'calset'}]}),
+    dlgs:{calset:{title:'הגדרות',side:[{id:'cs-gen',l:'כללי'},{id:'cs-acc',l:'חשבונות'},{id:'cs-alert',l:'התראות'},{id:'cs-adv',l:'מתקדם'}],
+     panes:{'cs-gen':[{l:'כללי',kind:'title'},{id:'cs-alt',l:'הצג לוח שנה חלופי',kind:'check'},{id:'cs-heb',l:'עברי',kind:'radio',g:'alt'},{id:'cs-chn',l:'סיני',kind:'radio',g:'alt'},{id:'cs-isl',l:'אסלאמי',kind:'radio',g:'alt'}],'cs-adv':[{id:'cs-wk',l:'הצג מספרי שבועות',kind:'check'}]},
+     btns:[{id:'cs-close',l:'סגור',close:true,pr:true}]}},
+    steps:[{t:'tab:appm',h:'בשורת התפריטים העליונה, לחצו על "לוח שנה".'},{t:'mc-set',h:'בחרו "הגדרות...".'},{t:'cs-alt',h:'בעמוד "כללי", סמנו וי ב"הצג לוח שנה חלופי".'},{t:'cs-heb',h:'בחרו "עברי".'},{t:'cs-close',h:'סגרו את חלון ההגדרות.'}],
+    done:a=>{a.q('.calg')[0].classList.add('heb');a.toast('התאריכים העבריים נוספו ללוח')},ok:'בעמוד "מתקדם" באותו חלון אפשר להפעיל גם מספרי שבועות.'}}},
+ 'ol-3':{fn:l=>{l.ex[0].q[1].o=['כלים › תשובות אוטומטיות','כלל העברה לכולם','מחיקת התיבה','חתימה חדשה'];l.ex[0].q[4]={q:'איך יוצרים חתימה מעוצבת?',o:['מעצבים בפאוורפוינט ומדביקים כתמונה ב־Outlook › הגדרות › חתימות','כותבים אותה ידנית בכל מייל','מצרפים קובץ Word','אי אפשר להוסיף תמונה לחתימה'],e:'כך החתימה נראית אותו דבר בכל מייל.'};l.ex[0].q[2].e='Outlook ל־Mac: ⌘+Return – שליחה מיידית.'}}
+ },
+ guess:{'pc-1':{0:{q:'איזה צירוף מציג מיד את שולחן העבודה?',o:['fn+F11','⌘+Tab'],kc:1},7:{q:'איפה נמצאת היסטוריית ההעתקות ב־macOS 26?',o:['ב־Spotlight – ⌘+4','בתפריט עריכה']}},
+  'pc-2':{1:{q:'קובץ נמחק מהמחשב. איפה מחפשים אותו?',o:['ב־Time Machine','ב־Spotlight']},5:{q:'⌘+Shift+3 – איפה נשמר הצילום?',o:['קובץ בשולחן העבודה','בלוח']}},
+  'off-3':{5:{q:'באקסל ל־Mac – אפשר לקבוע כל כמה זמן יישמר מידע לשחזור?',o:['לא – אקסל קובע לבד','כן, בכל דקה']}},
+  'ol-0':{0:{q:'מתי אי אפשר לאחזר מייל?',o:['כשהנמען כבר פתח אותו','אחרי שעה']},5:{q:'איזה קיצור שולח מייל ב־Mac?',o:['⌘+Return','⌘+S'],kc:1}},
+  'ol-2':{1:{q:'איפה מציגים תאריכים עבריים ב־Mac?',o:['לוח שנה › הגדרות › כללי','תצוגה › סדר לפי']}}}
+};
+
+/* ---------- builder ---------- */
+const escRe=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+function macMapper(extra){const map=Object.assign({},MAC.map,extra||{});const keys=Object.keys(map).sort((a,b)=>b.length-a.length);
+  const re=new RegExp('(?<![A-Za-z])('+keys.map(escRe).join('|')+')(?![A-Za-z])','g');return s=>s.replace(re,m=>map[m])}
+const SKIPK=new Set(['c','cm','k','codes','id','sel','type','app','g','ic','key','f','menu','dlg']);
+function deepMap(o,fn,k){if(typeof o==='string')return SKIPK.has(k)?o:fn(o);if(Array.isArray(o))return o.map(x=>deepMap(x,fn,k));
+  if(o&&typeof o==='object'){const r={};for(const kk in o)r[kk]=deepMap(o[kk],fn,kk);return r}return o}
+function applyOv(l,o){for(const k in o){if(k==='fn')continue;const v=o[k];
+  if((k==='cards'||k==='ex')&&v&&!Array.isArray(v)){const arr=l[k].slice();for(const i in v){const x=v[i];arr[i]=(x&&x.type)?x:Object.assign({},arr[i],x);Object.keys(arr[i]).forEach(kk=>arr[i][kk]===null&&delete arr[i][kk])}l[k]=arr}
+  else l[k]=v}
+  if(o.fn)o.fn(l);return l}
+const CH_MAC=CH_WIN.map(c=>{const g=macMapper();const nc=Object.assign({},c,{name:c.name,desc:g(c.desc)},MAC.ch[c.id]||{});
+  nc.lessons=c.lessons.map((l,li)=>{const id=c.id+'-'+li;const m=deepMap(l,macMapper(MAC.lmap[id]));return applyOv(m,MAC.L[id]||{})});return nc});
+const GUESS_MAC=(()=>{const g=deepMap(GUESS,macMapper());for(const id in MAC.guess){g[id]=Object.assign({},g[id]||{},MAC.guess[id])}return g})();
 
 </script>
 </body>
